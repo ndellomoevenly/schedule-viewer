@@ -32,7 +32,7 @@ export default function DashboardFilters({
           <select
             value={selectedTC}
             onChange={(e) => onTCChange(e.target.value)}
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="">All TCs</option>
             {tcNames.map((name) => (
@@ -51,7 +51,7 @@ export default function DashboardFilters({
           <select
             value={selectedDate}
             onChange={(e) => onDateChange(e.target.value)}
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="">All Dates</option>
             <option value="today">Today</option>

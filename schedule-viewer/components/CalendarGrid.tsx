@@ -121,7 +121,7 @@ export default function CalendarGrid({ schedules }: CalendarGridProps) {
                   return (
                     <td
                       key={date.toISOString()}
-                      className={`border-r border-slate-200 px-3 py-3 text-xs h-[90px] align-top transition-all ${
+                      className={`border-r border-slate-200 px-3 py-3 text-xs w-[120px] min-w-[120px] max-w-[120px] h-[90px] align-top transition-all ${
                         cellSchedule
                           ? 'cursor-pointer hover:bg-blue-50 hover:shadow-inner bg-white'
                           : 'bg-slate-50'
@@ -130,7 +130,7 @@ export default function CalendarGrid({ schedules }: CalendarGridProps) {
                     >
                       {cellSchedule && (
                         <div className="space-y-1.5">
-                          <div className="font-bold text-slate-900 truncate text-xs leading-tight" title={cellSchedule.location}>
+                          <div className="font-bold text-slate-900 text-xs leading-tight break-words" title={cellSchedule.location}>
                             {cellSchedule.location.replace(/^Deliveries\s+/, '').split(' - ')[1] || cellSchedule.location.replace(/^Deliveries\s+/, '')}
                           </div>
                           <div className="text-slate-600 text-xs font-medium">
