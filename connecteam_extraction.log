@@ -1,0 +1,707 @@
+2025-10-07 23:00:14,201 - connecteam_extractor - INFO - Starting Connecteam data extraction
+2025-10-07 23:00:14,201 - connecteam_extractor - INFO - Time range: 7/1/25 23:00 to 1/13/26 23:00
+2025-10-07 23:00:14,202 - connecteam_extractor - INFO - Fetching users from https://api.connecteam.com/users/v1/users
+2025-10-07 23:00:15,272 - connecteam_extractor - INFO - Successfully retrieved 91 users (91 unique IDs)
+2025-10-07 23:00:15,272 - connecteam_extractor - INFO - User ID 1112785 mapped to: Christy VanNess
+2025-10-07 23:00:15,272 - connecteam_extractor - INFO - User ID 1112790 mapped to: Dan Brashear
+2025-10-07 23:00:15,272 - connecteam_extractor - INFO - User ID 1128727 mapped to: Laura Edwards
+2025-10-07 23:00:15,272 - connecteam_extractor - INFO - User ID 1128730 mapped to: Jen Hayes
+2025-10-07 23:00:15,272 - connecteam_extractor - INFO - User ID 1128733 mapped to: Mich Morris
+2025-10-07 23:00:15,273 - connecteam_extractor - INFO - User map contains 91 entries
+2025-10-07 23:00:15,273 - connecteam_extractor - INFO - Fetching jobs from https://api.connecteam.com/jobs/v1/jobs
+2025-10-07 23:00:31,437 - connecteam_extractor - INFO - Successfully retrieved 2260 jobs (2258 unique IDs)
+2025-10-07 23:00:31,439 - connecteam_extractor - INFO - Job map contains 2258 entries
+2025-10-07 23:00:31,439 - connecteam_extractor - INFO - Fetching scheduler details from https://api.connecteam.com/scheduler/v1/schedulers
+2025-10-07 23:00:31,843 - connecteam_extractor - INFO - Successfully retrieved 12 scheduler names
+2025-10-07 23:00:31,846 - connecteam_extractor - INFO - Fetching schedulers from https://api.connecteam.com/scheduler/v1/schedulers
+2025-10-07 23:00:32,205 - connecteam_extractor - INFO - Successfully retrieved schedulers response
+2025-10-07 23:00:32,205 - connecteam_extractor - INFO - Scheduler response type: <class 'dict'>
+2025-10-07 23:00:32,208 - connecteam_extractor - INFO - Extracted 12 scheduler IDs
+2025-10-07 23:00:32,208 - connecteam_extractor - INFO - Processing scheduler ID: 821671
+2025-10-07 23:00:32,208 - connecteam_extractor - INFO - Fetching shifts for scheduler 821671 from 1751425214 to 1768363214
+2025-10-07 23:00:33,590 - connecteam_extractor - INFO - First shift structure: {"id": "672bbb66a600385474f47f22", "color": "", "assignedUserIds": [10931963], "startTime": 1752757200, "endTime": 1752782400, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "efb9c6f4-9156-6ca3-fe88-34c48ffac9ee", "locationData": {"isReferencedToJob": true, "gps": {"address": "13135 Lee Jackson Memorial Highway Service Road suite 110, Fairfax, VA, USA", "longitude": -77.40035379999999, "latitude": 38.8808961}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1749665219, "creationTime": 1730919270, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:33,590 - connecteam_extractor - INFO - First shift assignedUserIds: [10931963]
+2025-10-07 23:00:36,321 - connecteam_extractor - INFO - Successfully retrieved 1247 shifts for scheduler 821671
+2025-10-07 23:00:36,324 - connecteam_extractor - INFO - Transformed shift 672bbb66a600385474f47f22: assignedUsers = 'Kyleigh Laycock', location = ''
+2025-10-07 23:00:36,324 - connecteam_extractor - INFO - Transformed shift 673e46735d840d9fc0e953ab: assignedUsers = 'Courtney Brown', location = ''
+2025-10-07 23:00:36,325 - connecteam_extractor - INFO - Transformed shift 673e4673a4211b6d023880c0: assignedUsers = 'Rebecca Fuentes', location = ''
+2025-10-07 23:00:36,906 - connecteam_extractor - INFO - Processing scheduler ID: 1800755
+2025-10-07 23:00:36,907 - connecteam_extractor - INFO - Fetching shifts for scheduler 1800755 from 1751425214 to 1768363214
+2025-10-07 23:00:37,782 - connecteam_extractor - INFO - First shift structure: {"id": "67191c94e50770551d826409", "color": "", "assignedUserIds": [1128730], "startTime": 1752069600, "endTime": 1752098400, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "c7fa3d1c-5560-404c-acbf-103857232767", "locationData": {"isReferencedToJob": true, "gps": {"address": "Kennett Dental, McFarlan Road, Kennett Square, PA, USA", "longitude": -75.6926903, "latitude": 39.85578140000001}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1729699038, "creationTime": 1729698964, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:37,782 - connecteam_extractor - INFO - First shift assignedUserIds: [1128730]
+2025-10-07 23:00:37,782 - connecteam_extractor - INFO - Successfully retrieved 331 shifts for scheduler 1800755
+2025-10-07 23:00:37,786 - connecteam_extractor - INFO - Transformed shift 67191c94e50770551d826409: assignedUsers = 'Jen Hayes', location = ''
+2025-10-07 23:00:37,786 - connecteam_extractor - INFO - Transformed shift 67191c9483d07f3ee27eda14: assignedUsers = 'Jen Hayes', location = ''
+2025-10-07 23:00:37,787 - connecteam_extractor - INFO - Transformed shift 6719584c0a6fae95697f7a94: assignedUsers = 'Jen Hayes', location = ''
+2025-10-07 23:00:38,307 - connecteam_extractor - INFO - Processing scheduler ID: 3116851
+2025-10-07 23:00:38,307 - connecteam_extractor - INFO - Fetching shifts for scheduler 3116851 from 1751425214 to 1768363214
+2025-10-07 23:00:39,240 - connecteam_extractor - INFO - First shift structure: {"id": "67c8930a4a9eb615eaa16ea9", "color": "", "assignedUserIds": [7194279], "startTime": 1751634000, "endTime": 1751662800, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "75b9030f-6b31-4abb-a847-770feb29c657", "locationData": {"isReferencedToJob": false, "gps": {"address": ""}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1741198127, "creationTime": 1741198090, "notes": [], "statuses": [{"statusId": "e9d45f9a-60a0-475a-963e-5c78d0824de1", "status": "accepted", "creationTime": 1741198127, "updateTime": 1741198127, "creatingUserId": 7194279, "modifyingUserId": 7194279}], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:39,240 - connecteam_extractor - INFO - First shift assignedUserIds: [7194279]
+2025-10-07 23:00:39,240 - connecteam_extractor - INFO - Successfully retrieved 148 shifts for scheduler 3116851
+2025-10-07 23:00:39,241 - connecteam_extractor - INFO - Transformed shift 67c8930a4a9eb615eaa16ea9: assignedUsers = 'Horthencia Felix', location = ''
+2025-10-07 23:00:39,241 - connecteam_extractor - INFO - Transformed shift 67dc33e172f9987310f8204b: assignedUsers = 'Horthencia Felix', location = ''
+2025-10-07 23:00:39,241 - connecteam_extractor - INFO - Transformed shift 67dc4799e2328e8f1daa89c1: assignedUsers = '', location = ''
+2025-10-07 23:00:39,751 - connecteam_extractor - INFO - Processing scheduler ID: 3137235
+2025-10-07 23:00:39,751 - connecteam_extractor - INFO - Fetching shifts for scheduler 3137235 from 1751425214 to 1768363214
+2025-10-07 23:00:41,621 - connecteam_extractor - INFO - First shift structure: {"id": "67a141abe737abf7f10ca5da", "color": "", "assignedUserIds": [], "startTime": 1752771600, "endTime": 1752789600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "e5cd5ef6-ac11-4ac8-91a4-639d68e4bd50", "locationData": {"isReferencedToJob": true, "gps": {"address": "191 Boulevard, Hasbrouck Heights, NJ, USA", "longitude": -74.07916680000001, "latitude": 40.8613017}}, "isPublished": false, "isRequireAdminApproval": false, "updateTime": 1752007672, "creationTime": 1738621355, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:41,622 - connecteam_extractor - INFO - First shift assignedUserIds: []
+2025-10-07 23:00:43,117 - connecteam_extractor - INFO - Successfully retrieved 888 shifts for scheduler 3137235
+2025-10-07 23:00:43,119 - connecteam_extractor - INFO - Transformed shift 67a141abe737abf7f10ca5da: assignedUsers = '', location = ''
+2025-10-07 23:00:43,119 - connecteam_extractor - INFO - Transformed shift 67a141abc2581f5273790ec6: assignedUsers = 'Melissa Cawley', location = ''
+2025-10-07 23:00:43,119 - connecteam_extractor - INFO - Transformed shift 67a141abbec09ae24caf0dcf: assignedUsers = 'Melissa Cawley', location = ''
+2025-10-07 23:00:43,119 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67b5fac9d3b10e16e6c8b0bb
+2025-10-07 23:00:43,119 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67b5fad251ff4c4422b1959f
+2025-10-07 23:00:43,120 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 67c8be2c8ce8a2a1b94eb139
+2025-10-07 23:00:43,120 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67c8be39091c58843a2c0ba3
+2025-10-07 23:00:43,120 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 67c8be481752fb9d97fe1016
+2025-10-07 23:00:43,120 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67ebe6b7a572475fc3061a57
+2025-10-07 23:00:43,121 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67f6b0bd0f215475aa64e256
+2025-10-07 23:00:43,122 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 680fd8ccf4d62af47a2d1dde
+2025-10-07 23:00:43,124 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 682f4dfddf7d6fdf952846d5
+2025-10-07 23:00:43,124 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 682f4e11c945403060c2e089
+2025-10-07 23:00:43,124 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 682f4e11f39caff4f7996416
+2025-10-07 23:00:43,124 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 6835d2c62b4590bfb8b7b8a6
+2025-10-07 23:00:43,125 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683df3364e6edcdabae0305d
+2025-10-07 23:00:43,125 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683df3974b1b7cec12e4012d
+2025-10-07 23:00:43,125 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683df3a814492105b6e50bf9
+2025-10-07 23:00:43,126 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683f3c6bc17013806d327d6e
+2025-10-07 23:00:43,126 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6841c3536ebefc183bf416be
+2025-10-07 23:00:43,127 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684841a1edecb88db8ecaecd
+2025-10-07 23:00:43,127 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684841ba3415cb1e74d0f51a
+2025-10-07 23:00:43,127 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68484249cc96260c2694d446
+2025-10-07 23:00:43,127 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684842695b689d1d8043ba26
+2025-10-07 23:00:43,127 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684842b78efdd437ba826e0b
+2025-10-07 23:00:43,128 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6849882c6b8600aae77dfb43
+2025-10-07 23:00:43,128 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68498845808aaf33a29c06e6
+2025-10-07 23:00:43,128 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 684acb1638e21e34c80dca80
+2025-10-07 23:00:43,128 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 684acb24b384e46f7d266405
+2025-10-07 23:00:43,129 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685423f2b041c3030eb5704a
+2025-10-07 23:00:43,129 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6854275090cc6d6b4cbedd03
+2025-10-07 23:00:43,129 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68545e7b68122c2b27c9d06b
+2025-10-07 23:00:43,130 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6855a28abc8a4c6040ba90aa
+2025-10-07 23:00:43,130 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6855a2a1995022bd30e2c03b
+2025-10-07 23:00:43,131 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 685adc86a14028cb6e7bd031
+2025-10-07 23:00:43,131 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685ae8caddf71070320224f7
+2025-10-07 23:00:43,131 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685af16d2f12f36f0f6d4d77
+2025-10-07 23:00:43,131 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c01f208c01d2ea269c30a
+2025-10-07 23:00:43,131 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c2600ec498e39ba537514
+2025-10-07 23:00:43,132 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c4c67907cc925de041d7a
+2025-10-07 23:00:43,132 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c5b470fb28d714f1e1f16
+2025-10-07 23:00:43,132 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c5e9095b5ca7c09a16a59
+2025-10-07 23:00:43,133 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 6862dbe2b160643f1e6bf09f
+2025-10-07 23:00:43,134 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68656d7b37e0670b6822268f
+2025-10-07 23:00:43,135 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 686d53c545efee6b519d3f2a
+2025-10-07 23:00:43,135 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 686e8bfdd68f1b69c62bc0bd
+2025-10-07 23:00:43,136 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 686fda7df3d2ead941f9dbf7
+2025-10-07 23:00:43,137 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68714e970a53a1caf45d5b17
+2025-10-07 23:00:43,137 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 687544ebacd6ebd6efb90b7e
+2025-10-07 23:00:43,137 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68754521813c2f168d055b8a
+2025-10-07 23:00:43,137 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68766e966875616c66d7a9b5
+2025-10-07 23:00:43,137 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68769e6f896f640287035f10
+2025-10-07 23:00:43,138 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6877fe8b15bfcff37698121f
+2025-10-07 23:00:43,140 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 687ea5365c556b83abb0c01c
+2025-10-07 23:00:43,140 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 687f9cda205202000ba74744
+2025-10-07 23:00:43,141 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68829fc2d255590a423900a1
+2025-10-07 23:00:43,141 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6883a2025ebd3f2fde744472
+2025-10-07 23:00:43,141 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6883af491de68db2bd7ac613
+2025-10-07 23:00:43,142 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6887a51204dade5f03938c89
+2025-10-07 23:00:43,143 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6888e22d8d27576ef4fc99a7
+2025-10-07 23:00:43,144 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 688a77c2bb620526ba5f4185
+2025-10-07 23:00:43,145 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68934f85bb8d7741525dbd8f
+2025-10-07 23:00:43,146 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6894c45be4c73651179dfec3
+2025-10-07 23:00:43,147 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6895051e511c324faa5b0eac
+2025-10-07 23:00:43,147 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6895053652bd4f35eb9f0df0
+2025-10-07 23:00:43,147 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68951348342c5bfe7f23fd38
+2025-10-07 23:00:43,148 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6895138b07cb5c0321767448
+2025-10-07 23:00:43,148 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6896119ce473a8cb189f2fc3
+2025-10-07 23:00:43,148 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68964548e0b742bbfafa0d26
+2025-10-07 23:00:43,149 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689651fc40f6552f0484d472
+2025-10-07 23:00:43,150 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689a147336be93baeebf819b
+2025-10-07 23:00:43,150 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689a48b9a9945ecc983d51de
+2025-10-07 23:00:43,150 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689c9a47cf51e5f0897fe580
+2025-10-07 23:00:43,151 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689df79538fe84fec452df41
+2025-10-07 23:00:43,152 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68a38e544028e2f1919f4216
+2025-10-07 23:00:43,152 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68a4e03ef25510563101c5ba
+2025-10-07 23:00:43,153 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68a77f27228c090123e522ee
+2025-10-07 23:00:43,153 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac8a76eb372764a98d4a3b
+2025-10-07 23:00:43,153 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9c60f7606a041b4a871a
+2025-10-07 23:00:43,153 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9c760b6710bff74d0631
+2025-10-07 23:00:43,153 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9c96c42c88b3ab8701a6
+2025-10-07 23:00:43,153 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cb40c21d403a755e817
+2025-10-07 23:00:43,153 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cd31c3d0a935d8bef9a
+2025-10-07 23:00:43,154 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cdf7636f616889c7511
+2025-10-07 23:00:43,154 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cfbf4b31428274bfdcb
+2025-10-07 23:00:43,156 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ae02dcb04e244918a6b02b
+2025-10-07 23:00:43,157 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b7451a153ad9641aa66c07
+2025-10-07 23:00:43,158 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b865fbe6ac607e25800636
+2025-10-07 23:00:43,159 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b877cbb1899fc8932deaf3
+2025-10-07 23:00:43,159 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b877d8e86a280fae944ffb
+2025-10-07 23:00:43,159 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b877e6af45748197b66040
+2025-10-07 23:00:43,159 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b894e1be08e59f9cf90c41
+2025-10-07 23:00:43,163 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68c86a27afbaa81da8ba506d
+2025-10-07 23:00:43,166 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68d1523870fb027fd8266665
+2025-10-07 23:00:43,166 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68d41b9801cc5737c1e89a55
+2025-10-07 23:00:43,167 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68d700952ac03ef521227f5f
+2025-10-07 23:00:43,675 - connecteam_extractor - INFO - Processing scheduler ID: 3230583
+2025-10-07 23:00:43,676 - connecteam_extractor - INFO - Fetching shifts for scheduler 3230583 from 1751425214 to 1768363214
+2025-10-07 23:00:44,995 - connecteam_extractor - INFO - First shift structure: {"id": "672a2b02815642ff59b74d2c", "color": "", "assignedUserIds": [7011999], "startTime": 1751889600, "endTime": 1751922000, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "d8340027-95a5-4593-871b-e0a518c09b8d", "locationData": {"isReferencedToJob": true, "gps": {"address": "19651 Bruce B Downs Blvd Suite A-1, Tampa FL 33647"}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1751838439, "creationTime": 1730816770, "notes": [], "statuses": [{"statusId": "ba7d5f73-bede-446b-bd69-6f01fcf91597", "status": "accepted", "creationTime": 1751838439, "updateTime": 1751838439, "creatingUserId": 7011999, "modifyingUserId": 7011999, "assignedUserId": 7011999}], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:44,996 - connecteam_extractor - INFO - First shift assignedUserIds: [7011999]
+2025-10-07 23:00:47,079 - connecteam_extractor - INFO - Successfully retrieved 885 shifts for scheduler 3230583
+2025-10-07 23:00:47,082 - connecteam_extractor - INFO - Transformed shift 672a2b02815642ff59b74d2c: assignedUsers = 'Bethany Riendeau', location = ''
+2025-10-07 23:00:47,082 - connecteam_extractor - INFO - Transformed shift 672a2b7e00b21dd6417cb842: assignedUsers = 'Bethany Riendeau', location = ''
+2025-10-07 23:00:47,082 - connecteam_extractor - INFO - Transformed shift 672a2b7efabcc2b865324d9a: assignedUsers = 'Bethany Riendeau', location = ''
+2025-10-07 23:00:47,626 - connecteam_extractor - INFO - Processing scheduler ID: 3968324
+2025-10-07 23:00:47,626 - connecteam_extractor - INFO - Fetching shifts for scheduler 3968324 from 1751425214 to 1768363214
+2025-10-07 23:00:48,635 - connecteam_extractor - INFO - First shift structure: {"id": "674f630e67347d889f029138", "color": "", "assignedUserIds": [4921860], "startTime": 1753187400, "endTime": 1753214400, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "f01c6b17-956a-4152-9bff-b3998143947c", "locationData": {"isReferencedToJob": true, "gps": {"address": "123 Gralan Dr, Byron, GA 31008, USA", "longitude": -83.7548345, "latitude": 32.6498378}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1733256019, "creationTime": 1733255950, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:48,635 - connecteam_extractor - INFO - First shift assignedUserIds: [4921860]
+2025-10-07 23:00:48,635 - connecteam_extractor - INFO - Successfully retrieved 288 shifts for scheduler 3968324
+2025-10-07 23:00:48,637 - connecteam_extractor - INFO - Transformed shift 674f630e67347d889f029138: assignedUsers = 'Carmen Silverio', location = ''
+2025-10-07 23:00:48,637 - connecteam_extractor - INFO - Transformed shift 675887440a2ceefcb1295b9e: assignedUsers = '', location = ''
+2025-10-07 23:00:48,637 - connecteam_extractor - INFO - Transformed shift 6758924426db2b2cef63472a: assignedUsers = 'Carmen Silverio', location = ''
+2025-10-07 23:00:49,156 - connecteam_extractor - INFO - Processing scheduler ID: 5252193
+2025-10-07 23:00:49,157 - connecteam_extractor - INFO - Fetching shifts for scheduler 5252193 from 1751425214 to 1768363214
+2025-10-07 23:00:49,957 - connecteam_extractor - INFO - First shift structure: {"id": "67bcd4b89dd74ed6b5c13325", "color": "", "assignedUserIds": [5865107], "startTime": 1752496200, "endTime": 1752528600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "e9a9e87a-ef40-49de-acba-33b31cc57b44", "locationData": {"isReferencedToJob": true, "gps": {"address": "Dr. Kristina Zivrev D.M.D., LTD, Oakbrook Center, Oak Brook, IL, USA", "longitude": -87.95271679999999, "latitude": 41.8496904}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1751691570, "creationTime": 1740428472, "notes": [], "statuses": [{"statusId": "2bd5150f-9dd5-4f52-94d7-3654dceae15b", "status": "accepted", "creationTime": 1751691570, "updateTime": 1751691570, "creatingUserId": 5865107, "modifyingUserId": 5865107, "assignedUserId": 5865107}], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:49,958 - connecteam_extractor - INFO - First shift assignedUserIds: [5865107]
+2025-10-07 23:00:49,958 - connecteam_extractor - INFO - Successfully retrieved 236 shifts for scheduler 5252193
+2025-10-07 23:00:49,961 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67bcd4b89dd74ed6b5c13325
+2025-10-07 23:00:49,961 - connecteam_extractor - INFO - Transformed shift 67bcd4b89dd74ed6b5c13325: assignedUsers = 'User 5865107', location = ''
+2025-10-07 23:00:49,962 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67bcd4ef8de05625ed3ff03b
+2025-10-07 23:00:49,962 - connecteam_extractor - INFO - Transformed shift 67bcd4ef8de05625ed3ff03b: assignedUsers = 'User 5865107', location = ''
+2025-10-07 23:00:49,962 - connecteam_extractor - INFO - Transformed shift 67be0a8308b7073b510bdac4: assignedUsers = 'Lauren Maginity', location = ''
+2025-10-07 23:00:49,962 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67c89054e524c19db1a8ad6f
+2025-10-07 23:00:49,962 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08f1d9a8714cc45d0afdb
+2025-10-07 23:00:49,962 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08f1d7a173b2a3e54ba0d
+2025-10-07 23:00:49,962 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08f5752a5c3ae5729c8b9
+2025-10-07 23:00:49,962 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08fbbb13ddacf04a0236d
+2025-10-07 23:00:49,963 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67e576054fe08d5030e326c7
+2025-10-07 23:00:49,964 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67e5760598ba217e44a631ce
+2025-10-07 23:00:49,964 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 680016f3b857554201019553
+2025-10-07 23:00:49,964 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6800170dffe37ea81cd40dd8
+2025-10-07 23:00:49,966 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 68091cc0333ecee5895c3926
+2025-10-07 23:00:49,966 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6813941464102ab02e64662d
+2025-10-07 23:00:49,969 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6838b1098e1500d0383930d5
+2025-10-07 23:00:49,969 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 683dfb980e7931528d0b0b27
+2025-10-07 23:00:49,969 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 684878047cb5d544d120c914
+2025-10-07 23:00:49,969 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6849d43db041cfdbc1c5d34d
+2025-10-07 23:00:49,970 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 685330557ed98f920cddca23
+2025-10-07 23:00:49,971 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6853307f9b2345e6516544bb
+2025-10-07 23:00:49,971 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 685ee600167499231a276a47
+2025-10-07 23:00:49,971 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6862d80271fb99384ea41239
+2025-10-07 23:00:49,971 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6863d4155fa3bd958837dd51
+2025-10-07 23:00:49,972 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6866939e3e6dc68e80040af0
+2025-10-07 23:00:49,972 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 686693ead31d1e2c2a040bd5
+2025-10-07 23:00:49,974 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 68824bb71cd16e234c0dc70c
+2025-10-07 23:00:49,974 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 688bc563f187fc1275b590e1
+2025-10-07 23:00:50,480 - connecteam_extractor - INFO - Processing scheduler ID: 5501164
+2025-10-07 23:00:50,480 - connecteam_extractor - INFO - Fetching shifts for scheduler 5501164 from 1751425214 to 1768363214
+2025-10-07 23:00:51,542 - connecteam_extractor - INFO - First shift structure: {"id": "679918b53682fd2b626d8dcb", "color": "", "assignedUserIds": [], "startTime": 1752148800, "endTime": 1752181200, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "aa79a60b-e6c3-4989-9a16-daa285e173d8", "locationData": {"isReferencedToJob": true, "gps": {"address": "4013 14th St suite 413, Plano, TX, USA", "longitude": -96.6563273, "latitude": 33.01527069999999}}, "isPublished": false, "isRequireAdminApproval": false, "updateTime": 1748454338, "creationTime": 1738086581, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:51,543 - connecteam_extractor - INFO - First shift assignedUserIds: []
+2025-10-07 23:00:52,532 - connecteam_extractor - INFO - Successfully retrieved 566 shifts for scheduler 5501164
+2025-10-07 23:00:52,535 - connecteam_extractor - INFO - Transformed shift 679918b53682fd2b626d8dcb: assignedUsers = '', location = ''
+2025-10-07 23:00:52,535 - connecteam_extractor - INFO - Transformed shift 679918b5f2bc0b4c13cac8ad: assignedUsers = 'Dana Dagons', location = ''
+2025-10-07 23:00:52,535 - connecteam_extractor - INFO - Transformed shift 67ab6e62dd8aef6e27f005e6: assignedUsers = 'Christina Martinez', location = ''
+2025-10-07 23:00:53,072 - connecteam_extractor - INFO - Processing scheduler ID: 6252192
+2025-10-07 23:00:53,072 - connecteam_extractor - INFO - Fetching shifts for scheduler 6252192 from 1751425214 to 1768363214
+2025-10-07 23:00:53,551 - connecteam_extractor - INFO - First shift structure: {"id": "67b4c13368ad4412e37e0cfe", "color": "", "assignedUserIds": [4276411], "startTime": 1752753600, "endTime": 1752778800, "timezone": "America/New_York", "isOpenShift": false, "title": "Stephanie", "jobId": "4108b585-1074-a8f5-1211-adf6cd8228e9", "locationData": {"isReferencedToJob": true, "gps": {"address": "917 Harpeth Valley Place, Nashville, TN, USA", "longitude": -86.956611, "latitude": 36.083528}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1752084623, "creationTime": 1739899187, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:53,551 - connecteam_extractor - INFO - First shift assignedUserIds: [4276411]
+2025-10-07 23:00:53,552 - connecteam_extractor - INFO - Successfully retrieved 36 shifts for scheduler 6252192
+2025-10-07 23:00:53,553 - connecteam_extractor - INFO - Transformed shift 67b4c13368ad4412e37e0cfe: assignedUsers = 'A TC from another region', location = ''
+2025-10-07 23:00:53,553 - connecteam_extractor - INFO - Transformed shift 67b4c1338c76899d6810c741: assignedUsers = '', location = ''
+2025-10-07 23:00:53,553 - connecteam_extractor - INFO - Transformed shift 67cf51f5492c5c5cd4f12f09: assignedUsers = '', location = ''
+2025-10-07 23:00:54,059 - connecteam_extractor - INFO - Processing scheduler ID: 9360026
+2025-10-07 23:00:54,060 - connecteam_extractor - INFO - Fetching shifts for scheduler 9360026 from 1751425214 to 1768363214
+2025-10-07 23:00:54,435 - connecteam_extractor - INFO - First shift structure: {"id": "68b89521bb2d35a401e10d57", "color": "", "assignedUserIds": [8786507], "startTime": 1756927800, "endTime": 1756929600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "5bac64ff-02db-255f-59ad-a8a36beb8284", "locationData": {"isReferencedToJob": false, "gps": {"address": ""}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1756927265, "creationTime": 1756927265, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:54,435 - connecteam_extractor - INFO - First shift assignedUserIds: [8786507]
+2025-10-07 23:00:54,436 - connecteam_extractor - INFO - Successfully retrieved 4 shifts for scheduler 9360026
+2025-10-07 23:00:54,439 - connecteam_extractor - INFO - Transformed shift 68b89521bb2d35a401e10d57: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:00:54,439 - connecteam_extractor - INFO - Transformed shift 68c044fa1f2c7a1967bbc42e: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:00:54,439 - connecteam_extractor - INFO - Transformed shift 68c1b2793aa9613aa5ec37bd: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:00:54,942 - connecteam_extractor - INFO - Processing scheduler ID: 10439054
+2025-10-07 23:00:54,942 - connecteam_extractor - INFO - Fetching shifts for scheduler 10439054 from 1751425214 to 1768363214
+2025-10-07 23:00:55,310 - connecteam_extractor - INFO - First shift structure: {"id": "68b8a99f0619f394d39954d1", "color": "", "assignedUserIds": [8786507], "startTime": 1756933200, "endTime": 1756935000, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "2ed4117c-faff-424d-b6a2-c9173a72d903", "locationData": {"isReferencedToJob": true, "gps": {"address": "124 E 170th St., Bronx, NY"}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1756932511, "creationTime": 1756932511, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:55,310 - connecteam_extractor - INFO - First shift assignedUserIds: [8786507]
+2025-10-07 23:00:55,310 - connecteam_extractor - INFO - Successfully retrieved 1 shifts for scheduler 10439054
+2025-10-07 23:00:55,312 - connecteam_extractor - INFO - Transformed shift 68b8a99f0619f394d39954d1: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:00:55,813 - connecteam_extractor - INFO - Processing scheduler ID: 10617149
+2025-10-07 23:00:55,814 - connecteam_extractor - INFO - Fetching shifts for scheduler 10617149 from 1751425214 to 1768363214
+2025-10-07 23:00:56,173 - connecteam_extractor - INFO - First shift structure: {"id": "68cb01ca5bb437702e5cbf0c", "color": "", "assignedUserIds": [8786507], "startTime": 1758133800, "endTime": 1758135600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "3215f152-73f7-4ccd-95b6-99cdd7e1bb7a", "locationData": {"isReferencedToJob": false, "gps": {"address": ""}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1758134807, "creationTime": 1758134730, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:00:56,173 - connecteam_extractor - INFO - First shift assignedUserIds: [8786507]
+2025-10-07 23:00:56,173 - connecteam_extractor - INFO - Successfully retrieved 1 shifts for scheduler 10617149
+2025-10-07 23:00:56,174 - connecteam_extractor - INFO - Transformed shift 68cb01ca5bb437702e5cbf0c: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:00:56,680 - connecteam_extractor - INFO - Total shifts after transformation: 4631
+2025-10-07 23:00:56,683 - connecteam_extractor - INFO - Shifts with empty assignedUsers: 399 (8.62%)
+2025-10-07 23:00:56,684 - connecteam_extractor - INFO - Writing 4631 shifts to managed_tables/connect_teams/schedule_data.csv
+2025-10-07 23:00:56,684 - connecteam_extractor - ERROR - Error writing to CSV: [Errno 2] No such file or directory: 'managed_tables/connect_teams/schedule_data.csv'
+2025-10-07 23:00:56,684 - connecteam_extractor - ERROR - Error in data extraction process: [Errno 2] No such file or directory: 'managed_tables/connect_teams/schedule_data.csv'
+2025-10-07 23:01:03,885 - connecteam_extractor - INFO - Starting Connecteam data extraction
+2025-10-07 23:01:03,885 - connecteam_extractor - INFO - Time range: 7/1/25 23:01 to 1/13/26 23:01
+2025-10-07 23:01:03,885 - connecteam_extractor - INFO - Fetching users from https://api.connecteam.com/users/v1/users
+2025-10-07 23:01:04,614 - connecteam_extractor - INFO - Successfully retrieved 91 users (91 unique IDs)
+2025-10-07 23:01:04,615 - connecteam_extractor - INFO - User ID 1112785 mapped to: Christy VanNess
+2025-10-07 23:01:04,615 - connecteam_extractor - INFO - User ID 1112790 mapped to: Dan Brashear
+2025-10-07 23:01:04,615 - connecteam_extractor - INFO - User ID 1128727 mapped to: Laura Edwards
+2025-10-07 23:01:04,615 - connecteam_extractor - INFO - User ID 1128730 mapped to: Jen Hayes
+2025-10-07 23:01:04,615 - connecteam_extractor - INFO - User ID 1128733 mapped to: Mich Morris
+2025-10-07 23:01:04,617 - connecteam_extractor - INFO - User map contains 91 entries
+2025-10-07 23:01:04,617 - connecteam_extractor - INFO - Fetching jobs from https://api.connecteam.com/jobs/v1/jobs
+2025-10-07 23:01:19,904 - connecteam_extractor - INFO - Successfully retrieved 2260 jobs (2258 unique IDs)
+2025-10-07 23:01:19,909 - connecteam_extractor - INFO - Job map contains 2258 entries
+2025-10-07 23:01:19,909 - connecteam_extractor - INFO - Fetching scheduler details from https://api.connecteam.com/scheduler/v1/schedulers
+2025-10-07 23:01:20,379 - connecteam_extractor - INFO - Successfully retrieved 12 scheduler names
+2025-10-07 23:01:20,382 - connecteam_extractor - INFO - Fetching schedulers from https://api.connecteam.com/scheduler/v1/schedulers
+2025-10-07 23:01:20,757 - connecteam_extractor - INFO - Successfully retrieved schedulers response
+2025-10-07 23:01:20,757 - connecteam_extractor - INFO - Scheduler response type: <class 'dict'>
+2025-10-07 23:01:20,758 - connecteam_extractor - INFO - Extracted 12 scheduler IDs
+2025-10-07 23:01:20,758 - connecteam_extractor - INFO - Processing scheduler ID: 821671
+2025-10-07 23:01:20,758 - connecteam_extractor - INFO - Fetching shifts for scheduler 821671 from 1751425263 to 1768363263
+2025-10-07 23:01:21,965 - connecteam_extractor - INFO - First shift structure: {"id": "672bbb66a600385474f47f22", "color": "", "assignedUserIds": [10931963], "startTime": 1752757200, "endTime": 1752782400, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "efb9c6f4-9156-6ca3-fe88-34c48ffac9ee", "locationData": {"isReferencedToJob": true, "gps": {"address": "13135 Lee Jackson Memorial Highway Service Road suite 110, Fairfax, VA, USA", "longitude": -77.40035379999999, "latitude": 38.8808961}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1749665219, "creationTime": 1730919270, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:21,965 - connecteam_extractor - INFO - First shift assignedUserIds: [10931963]
+2025-10-07 23:01:25,041 - connecteam_extractor - INFO - Successfully retrieved 1247 shifts for scheduler 821671
+2025-10-07 23:01:25,046 - connecteam_extractor - INFO - Transformed shift 672bbb66a600385474f47f22: assignedUsers = 'Kyleigh Laycock', location = ''
+2025-10-07 23:01:25,047 - connecteam_extractor - INFO - Transformed shift 673e46735d840d9fc0e953ab: assignedUsers = 'Courtney Brown', location = ''
+2025-10-07 23:01:25,047 - connecteam_extractor - INFO - Transformed shift 673e4673a4211b6d023880c0: assignedUsers = 'Rebecca Fuentes', location = ''
+2025-10-07 23:01:25,605 - connecteam_extractor - INFO - Processing scheduler ID: 1800755
+2025-10-07 23:01:25,608 - connecteam_extractor - INFO - Fetching shifts for scheduler 1800755 from 1751425263 to 1768363263
+2025-10-07 23:01:26,474 - connecteam_extractor - INFO - First shift structure: {"id": "67191c94e50770551d826409", "color": "", "assignedUserIds": [1128730], "startTime": 1752069600, "endTime": 1752098400, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "c7fa3d1c-5560-404c-acbf-103857232767", "locationData": {"isReferencedToJob": true, "gps": {"address": "Kennett Dental, McFarlan Road, Kennett Square, PA, USA", "longitude": -75.6926903, "latitude": 39.85578140000001}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1729699038, "creationTime": 1729698964, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:26,475 - connecteam_extractor - INFO - First shift assignedUserIds: [1128730]
+2025-10-07 23:01:26,475 - connecteam_extractor - INFO - Successfully retrieved 331 shifts for scheduler 1800755
+2025-10-07 23:01:26,478 - connecteam_extractor - INFO - Transformed shift 67191c94e50770551d826409: assignedUsers = 'Jen Hayes', location = ''
+2025-10-07 23:01:26,479 - connecteam_extractor - INFO - Transformed shift 67191c9483d07f3ee27eda14: assignedUsers = 'Jen Hayes', location = ''
+2025-10-07 23:01:26,479 - connecteam_extractor - INFO - Transformed shift 6719584c0a6fae95697f7a94: assignedUsers = 'Jen Hayes', location = ''
+2025-10-07 23:01:27,003 - connecteam_extractor - INFO - Processing scheduler ID: 3116851
+2025-10-07 23:01:27,003 - connecteam_extractor - INFO - Fetching shifts for scheduler 3116851 from 1751425263 to 1768363263
+2025-10-07 23:01:27,939 - connecteam_extractor - INFO - First shift structure: {"id": "67c8930a4a9eb615eaa16ea9", "color": "", "assignedUserIds": [7194279], "startTime": 1751634000, "endTime": 1751662800, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "75b9030f-6b31-4abb-a847-770feb29c657", "locationData": {"isReferencedToJob": false, "gps": {"address": ""}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1741198127, "creationTime": 1741198090, "notes": [], "statuses": [{"statusId": "e9d45f9a-60a0-475a-963e-5c78d0824de1", "status": "accepted", "creationTime": 1741198127, "updateTime": 1741198127, "creatingUserId": 7194279, "modifyingUserId": 7194279}], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:27,939 - connecteam_extractor - INFO - First shift assignedUserIds: [7194279]
+2025-10-07 23:01:27,939 - connecteam_extractor - INFO - Successfully retrieved 148 shifts for scheduler 3116851
+2025-10-07 23:01:27,942 - connecteam_extractor - INFO - Transformed shift 67c8930a4a9eb615eaa16ea9: assignedUsers = 'Horthencia Felix', location = ''
+2025-10-07 23:01:27,942 - connecteam_extractor - INFO - Transformed shift 67dc33e172f9987310f8204b: assignedUsers = 'Horthencia Felix', location = ''
+2025-10-07 23:01:27,942 - connecteam_extractor - INFO - Transformed shift 67dc4799e2328e8f1daa89c1: assignedUsers = '', location = ''
+2025-10-07 23:01:28,455 - connecteam_extractor - INFO - Processing scheduler ID: 3137235
+2025-10-07 23:01:28,455 - connecteam_extractor - INFO - Fetching shifts for scheduler 3137235 from 1751425263 to 1768363263
+2025-10-07 23:01:29,731 - connecteam_extractor - INFO - First shift structure: {"id": "67a141abe737abf7f10ca5da", "color": "", "assignedUserIds": [], "startTime": 1752771600, "endTime": 1752789600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "e5cd5ef6-ac11-4ac8-91a4-639d68e4bd50", "locationData": {"isReferencedToJob": true, "gps": {"address": "191 Boulevard, Hasbrouck Heights, NJ, USA", "longitude": -74.07916680000001, "latitude": 40.8613017}}, "isPublished": false, "isRequireAdminApproval": false, "updateTime": 1752007672, "creationTime": 1738621355, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:29,731 - connecteam_extractor - INFO - First shift assignedUserIds: []
+2025-10-07 23:01:31,222 - connecteam_extractor - INFO - Successfully retrieved 888 shifts for scheduler 3137235
+2025-10-07 23:01:31,224 - connecteam_extractor - INFO - Transformed shift 67a141abe737abf7f10ca5da: assignedUsers = '', location = ''
+2025-10-07 23:01:31,224 - connecteam_extractor - INFO - Transformed shift 67a141abc2581f5273790ec6: assignedUsers = 'Melissa Cawley', location = ''
+2025-10-07 23:01:31,224 - connecteam_extractor - INFO - Transformed shift 67a141abbec09ae24caf0dcf: assignedUsers = 'Melissa Cawley', location = ''
+2025-10-07 23:01:31,224 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67b5fac9d3b10e16e6c8b0bb
+2025-10-07 23:01:31,224 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67b5fad251ff4c4422b1959f
+2025-10-07 23:01:31,224 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 67c8be2c8ce8a2a1b94eb139
+2025-10-07 23:01:31,225 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67c8be39091c58843a2c0ba3
+2025-10-07 23:01:31,225 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 67c8be481752fb9d97fe1016
+2025-10-07 23:01:31,225 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67ebe6b7a572475fc3061a57
+2025-10-07 23:01:31,226 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67f6b0bd0f215475aa64e256
+2025-10-07 23:01:31,227 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 680fd8ccf4d62af47a2d1dde
+2025-10-07 23:01:31,229 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 682f4dfddf7d6fdf952846d5
+2025-10-07 23:01:31,229 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 682f4e11c945403060c2e089
+2025-10-07 23:01:31,230 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 682f4e11f39caff4f7996416
+2025-10-07 23:01:31,230 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 6835d2c62b4590bfb8b7b8a6
+2025-10-07 23:01:31,231 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683df3364e6edcdabae0305d
+2025-10-07 23:01:31,232 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683df3974b1b7cec12e4012d
+2025-10-07 23:01:31,232 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683df3a814492105b6e50bf9
+2025-10-07 23:01:31,232 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683f3c6bc17013806d327d6e
+2025-10-07 23:01:31,233 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6841c3536ebefc183bf416be
+2025-10-07 23:01:31,233 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684841a1edecb88db8ecaecd
+2025-10-07 23:01:31,233 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684841ba3415cb1e74d0f51a
+2025-10-07 23:01:31,233 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68484249cc96260c2694d446
+2025-10-07 23:01:31,233 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684842695b689d1d8043ba26
+2025-10-07 23:01:31,233 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684842b78efdd437ba826e0b
+2025-10-07 23:01:31,234 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6849882c6b8600aae77dfb43
+2025-10-07 23:01:31,234 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68498845808aaf33a29c06e6
+2025-10-07 23:01:31,234 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 684acb1638e21e34c80dca80
+2025-10-07 23:01:31,234 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 684acb24b384e46f7d266405
+2025-10-07 23:01:31,235 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685423f2b041c3030eb5704a
+2025-10-07 23:01:31,235 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6854275090cc6d6b4cbedd03
+2025-10-07 23:01:31,236 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68545e7b68122c2b27c9d06b
+2025-10-07 23:01:31,236 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6855a28abc8a4c6040ba90aa
+2025-10-07 23:01:31,236 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6855a2a1995022bd30e2c03b
+2025-10-07 23:01:31,237 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 685adc86a14028cb6e7bd031
+2025-10-07 23:01:31,237 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685ae8caddf71070320224f7
+2025-10-07 23:01:31,238 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685af16d2f12f36f0f6d4d77
+2025-10-07 23:01:31,238 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c01f208c01d2ea269c30a
+2025-10-07 23:01:31,238 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c2600ec498e39ba537514
+2025-10-07 23:01:31,238 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c4c67907cc925de041d7a
+2025-10-07 23:01:31,239 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c5b470fb28d714f1e1f16
+2025-10-07 23:01:31,239 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c5e9095b5ca7c09a16a59
+2025-10-07 23:01:31,239 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 6862dbe2b160643f1e6bf09f
+2025-10-07 23:01:31,240 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68656d7b37e0670b6822268f
+2025-10-07 23:01:31,241 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 686d53c545efee6b519d3f2a
+2025-10-07 23:01:31,242 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 686e8bfdd68f1b69c62bc0bd
+2025-10-07 23:01:31,242 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 686fda7df3d2ead941f9dbf7
+2025-10-07 23:01:31,243 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68714e970a53a1caf45d5b17
+2025-10-07 23:01:31,243 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 687544ebacd6ebd6efb90b7e
+2025-10-07 23:01:31,243 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68754521813c2f168d055b8a
+2025-10-07 23:01:31,244 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68766e966875616c66d7a9b5
+2025-10-07 23:01:31,244 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68769e6f896f640287035f10
+2025-10-07 23:01:31,244 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6877fe8b15bfcff37698121f
+2025-10-07 23:01:31,246 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 687ea5365c556b83abb0c01c
+2025-10-07 23:01:31,247 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 687f9cda205202000ba74744
+2025-10-07 23:01:31,248 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68829fc2d255590a423900a1
+2025-10-07 23:01:31,248 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6883a2025ebd3f2fde744472
+2025-10-07 23:01:31,248 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6883af491de68db2bd7ac613
+2025-10-07 23:01:31,250 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6887a51204dade5f03938c89
+2025-10-07 23:01:31,250 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6888e22d8d27576ef4fc99a7
+2025-10-07 23:01:31,251 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 688a77c2bb620526ba5f4185
+2025-10-07 23:01:31,252 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68934f85bb8d7741525dbd8f
+2025-10-07 23:01:31,253 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6894c45be4c73651179dfec3
+2025-10-07 23:01:31,253 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6895051e511c324faa5b0eac
+2025-10-07 23:01:31,253 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6895053652bd4f35eb9f0df0
+2025-10-07 23:01:31,253 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68951348342c5bfe7f23fd38
+2025-10-07 23:01:31,253 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6895138b07cb5c0321767448
+2025-10-07 23:01:31,254 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6896119ce473a8cb189f2fc3
+2025-10-07 23:01:31,254 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68964548e0b742bbfafa0d26
+2025-10-07 23:01:31,255 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689651fc40f6552f0484d472
+2025-10-07 23:01:31,255 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689a147336be93baeebf819b
+2025-10-07 23:01:31,255 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689a48b9a9945ecc983d51de
+2025-10-07 23:01:31,256 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689c9a47cf51e5f0897fe580
+2025-10-07 23:01:31,256 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689df79538fe84fec452df41
+2025-10-07 23:01:31,257 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68a38e544028e2f1919f4216
+2025-10-07 23:01:31,257 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68a4e03ef25510563101c5ba
+2025-10-07 23:01:31,257 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68a77f27228c090123e522ee
+2025-10-07 23:01:31,258 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac8a76eb372764a98d4a3b
+2025-10-07 23:01:31,258 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9c60f7606a041b4a871a
+2025-10-07 23:01:31,258 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9c760b6710bff74d0631
+2025-10-07 23:01:31,258 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9c96c42c88b3ab8701a6
+2025-10-07 23:01:31,258 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cb40c21d403a755e817
+2025-10-07 23:01:31,258 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cd31c3d0a935d8bef9a
+2025-10-07 23:01:31,258 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cdf7636f616889c7511
+2025-10-07 23:01:31,258 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cfbf4b31428274bfdcb
+2025-10-07 23:01:31,259 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ae02dcb04e244918a6b02b
+2025-10-07 23:01:31,260 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b7451a153ad9641aa66c07
+2025-10-07 23:01:31,261 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b865fbe6ac607e25800636
+2025-10-07 23:01:31,261 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b877cbb1899fc8932deaf3
+2025-10-07 23:01:31,261 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b877d8e86a280fae944ffb
+2025-10-07 23:01:31,261 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b877e6af45748197b66040
+2025-10-07 23:01:31,261 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b894e1be08e59f9cf90c41
+2025-10-07 23:01:31,263 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68c86a27afbaa81da8ba506d
+2025-10-07 23:01:31,265 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68d1523870fb027fd8266665
+2025-10-07 23:01:31,265 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68d41b9801cc5737c1e89a55
+2025-10-07 23:01:31,265 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68d700952ac03ef521227f5f
+2025-10-07 23:01:31,773 - connecteam_extractor - INFO - Processing scheduler ID: 3230583
+2025-10-07 23:01:31,773 - connecteam_extractor - INFO - Fetching shifts for scheduler 3230583 from 1751425263 to 1768363263
+2025-10-07 23:01:32,899 - connecteam_extractor - INFO - First shift structure: {"id": "672a2b02815642ff59b74d2c", "color": "", "assignedUserIds": [7011999], "startTime": 1751889600, "endTime": 1751922000, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "d8340027-95a5-4593-871b-e0a518c09b8d", "locationData": {"isReferencedToJob": true, "gps": {"address": "19651 Bruce B Downs Blvd Suite A-1, Tampa FL 33647"}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1751838439, "creationTime": 1730816770, "notes": [], "statuses": [{"statusId": "ba7d5f73-bede-446b-bd69-6f01fcf91597", "status": "accepted", "creationTime": 1751838439, "updateTime": 1751838439, "creatingUserId": 7011999, "modifyingUserId": 7011999, "assignedUserId": 7011999}], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:32,900 - connecteam_extractor - INFO - First shift assignedUserIds: [7011999]
+2025-10-07 23:01:34,381 - connecteam_extractor - INFO - Successfully retrieved 885 shifts for scheduler 3230583
+2025-10-07 23:01:34,384 - connecteam_extractor - INFO - Transformed shift 672a2b02815642ff59b74d2c: assignedUsers = 'Bethany Riendeau', location = ''
+2025-10-07 23:01:34,385 - connecteam_extractor - INFO - Transformed shift 672a2b7e00b21dd6417cb842: assignedUsers = 'Bethany Riendeau', location = ''
+2025-10-07 23:01:34,385 - connecteam_extractor - INFO - Transformed shift 672a2b7efabcc2b865324d9a: assignedUsers = 'Bethany Riendeau', location = ''
+2025-10-07 23:01:34,929 - connecteam_extractor - INFO - Processing scheduler ID: 3968324
+2025-10-07 23:01:34,940 - connecteam_extractor - INFO - Fetching shifts for scheduler 3968324 from 1751425263 to 1768363263
+2025-10-07 23:01:35,930 - connecteam_extractor - INFO - First shift structure: {"id": "674f630e67347d889f029138", "color": "", "assignedUserIds": [4921860], "startTime": 1753187400, "endTime": 1753214400, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "f01c6b17-956a-4152-9bff-b3998143947c", "locationData": {"isReferencedToJob": true, "gps": {"address": "123 Gralan Dr, Byron, GA 31008, USA", "longitude": -83.7548345, "latitude": 32.6498378}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1733256019, "creationTime": 1733255950, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:35,930 - connecteam_extractor - INFO - First shift assignedUserIds: [4921860]
+2025-10-07 23:01:35,930 - connecteam_extractor - INFO - Successfully retrieved 288 shifts for scheduler 3968324
+2025-10-07 23:01:35,938 - connecteam_extractor - INFO - Transformed shift 674f630e67347d889f029138: assignedUsers = 'Carmen Silverio', location = ''
+2025-10-07 23:01:35,938 - connecteam_extractor - INFO - Transformed shift 675887440a2ceefcb1295b9e: assignedUsers = '', location = ''
+2025-10-07 23:01:35,939 - connecteam_extractor - INFO - Transformed shift 6758924426db2b2cef63472a: assignedUsers = 'Carmen Silverio', location = ''
+2025-10-07 23:01:36,453 - connecteam_extractor - INFO - Processing scheduler ID: 5252193
+2025-10-07 23:01:36,454 - connecteam_extractor - INFO - Fetching shifts for scheduler 5252193 from 1751425263 to 1768363263
+2025-10-07 23:01:37,256 - connecteam_extractor - INFO - First shift structure: {"id": "67bcd4b89dd74ed6b5c13325", "color": "", "assignedUserIds": [5865107], "startTime": 1752496200, "endTime": 1752528600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "e9a9e87a-ef40-49de-acba-33b31cc57b44", "locationData": {"isReferencedToJob": true, "gps": {"address": "Dr. Kristina Zivrev D.M.D., LTD, Oakbrook Center, Oak Brook, IL, USA", "longitude": -87.95271679999999, "latitude": 41.8496904}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1751691570, "creationTime": 1740428472, "notes": [], "statuses": [{"statusId": "2bd5150f-9dd5-4f52-94d7-3654dceae15b", "status": "accepted", "creationTime": 1751691570, "updateTime": 1751691570, "creatingUserId": 5865107, "modifyingUserId": 5865107, "assignedUserId": 5865107}], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:37,256 - connecteam_extractor - INFO - First shift assignedUserIds: [5865107]
+2025-10-07 23:01:37,256 - connecteam_extractor - INFO - Successfully retrieved 236 shifts for scheduler 5252193
+2025-10-07 23:01:37,259 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67bcd4b89dd74ed6b5c13325
+2025-10-07 23:01:37,259 - connecteam_extractor - INFO - Transformed shift 67bcd4b89dd74ed6b5c13325: assignedUsers = 'User 5865107', location = ''
+2025-10-07 23:01:37,259 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67bcd4ef8de05625ed3ff03b
+2025-10-07 23:01:37,259 - connecteam_extractor - INFO - Transformed shift 67bcd4ef8de05625ed3ff03b: assignedUsers = 'User 5865107', location = ''
+2025-10-07 23:01:37,260 - connecteam_extractor - INFO - Transformed shift 67be0a8308b7073b510bdac4: assignedUsers = 'Lauren Maginity', location = ''
+2025-10-07 23:01:37,260 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67c89054e524c19db1a8ad6f
+2025-10-07 23:01:37,260 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08f1d9a8714cc45d0afdb
+2025-10-07 23:01:37,260 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08f1d7a173b2a3e54ba0d
+2025-10-07 23:01:37,260 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08f5752a5c3ae5729c8b9
+2025-10-07 23:01:37,260 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08fbbb13ddacf04a0236d
+2025-10-07 23:01:37,261 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67e576054fe08d5030e326c7
+2025-10-07 23:01:37,261 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67e5760598ba217e44a631ce
+2025-10-07 23:01:37,262 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 680016f3b857554201019553
+2025-10-07 23:01:37,262 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6800170dffe37ea81cd40dd8
+2025-10-07 23:01:37,264 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 68091cc0333ecee5895c3926
+2025-10-07 23:01:37,264 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6813941464102ab02e64662d
+2025-10-07 23:01:37,266 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6838b1098e1500d0383930d5
+2025-10-07 23:01:37,267 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 683dfb980e7931528d0b0b27
+2025-10-07 23:01:37,267 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 684878047cb5d544d120c914
+2025-10-07 23:01:37,267 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6849d43db041cfdbc1c5d34d
+2025-10-07 23:01:37,268 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 685330557ed98f920cddca23
+2025-10-07 23:01:37,268 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6853307f9b2345e6516544bb
+2025-10-07 23:01:37,269 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 685ee600167499231a276a47
+2025-10-07 23:01:37,269 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6862d80271fb99384ea41239
+2025-10-07 23:01:37,269 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6863d4155fa3bd958837dd51
+2025-10-07 23:01:37,270 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6866939e3e6dc68e80040af0
+2025-10-07 23:01:37,270 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 686693ead31d1e2c2a040bd5
+2025-10-07 23:01:37,271 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 68824bb71cd16e234c0dc70c
+2025-10-07 23:01:37,272 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 688bc563f187fc1275b590e1
+2025-10-07 23:01:37,779 - connecteam_extractor - INFO - Processing scheduler ID: 5501164
+2025-10-07 23:01:37,780 - connecteam_extractor - INFO - Fetching shifts for scheduler 5501164 from 1751425263 to 1768363263
+2025-10-07 23:01:38,814 - connecteam_extractor - INFO - First shift structure: {"id": "679918b53682fd2b626d8dcb", "color": "", "assignedUserIds": [], "startTime": 1752148800, "endTime": 1752181200, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "aa79a60b-e6c3-4989-9a16-daa285e173d8", "locationData": {"isReferencedToJob": true, "gps": {"address": "4013 14th St suite 413, Plano, TX, USA", "longitude": -96.6563273, "latitude": 33.01527069999999}}, "isPublished": false, "isRequireAdminApproval": false, "updateTime": 1748454338, "creationTime": 1738086581, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:38,814 - connecteam_extractor - INFO - First shift assignedUserIds: []
+2025-10-07 23:01:39,929 - connecteam_extractor - INFO - Successfully retrieved 566 shifts for scheduler 5501164
+2025-10-07 23:01:39,931 - connecteam_extractor - INFO - Transformed shift 679918b53682fd2b626d8dcb: assignedUsers = '', location = ''
+2025-10-07 23:01:39,931 - connecteam_extractor - INFO - Transformed shift 679918b5f2bc0b4c13cac8ad: assignedUsers = 'Dana Dagons', location = ''
+2025-10-07 23:01:39,931 - connecteam_extractor - INFO - Transformed shift 67ab6e62dd8aef6e27f005e6: assignedUsers = 'Christina Martinez', location = ''
+2025-10-07 23:01:40,483 - connecteam_extractor - INFO - Processing scheduler ID: 6252192
+2025-10-07 23:01:40,484 - connecteam_extractor - INFO - Fetching shifts for scheduler 6252192 from 1751425263 to 1768363263
+2025-10-07 23:01:40,952 - connecteam_extractor - INFO - First shift structure: {"id": "67b4c13368ad4412e37e0cfe", "color": "", "assignedUserIds": [4276411], "startTime": 1752753600, "endTime": 1752778800, "timezone": "America/New_York", "isOpenShift": false, "title": "Stephanie", "jobId": "4108b585-1074-a8f5-1211-adf6cd8228e9", "locationData": {"isReferencedToJob": true, "gps": {"address": "917 Harpeth Valley Place, Nashville, TN, USA", "longitude": -86.956611, "latitude": 36.083528}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1752084623, "creationTime": 1739899187, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:40,953 - connecteam_extractor - INFO - First shift assignedUserIds: [4276411]
+2025-10-07 23:01:40,953 - connecteam_extractor - INFO - Successfully retrieved 36 shifts for scheduler 6252192
+2025-10-07 23:01:40,955 - connecteam_extractor - INFO - Transformed shift 67b4c13368ad4412e37e0cfe: assignedUsers = 'A TC from another region', location = ''
+2025-10-07 23:01:40,955 - connecteam_extractor - INFO - Transformed shift 67b4c1338c76899d6810c741: assignedUsers = '', location = ''
+2025-10-07 23:01:40,955 - connecteam_extractor - INFO - Transformed shift 67cf51f5492c5c5cd4f12f09: assignedUsers = '', location = ''
+2025-10-07 23:01:41,462 - connecteam_extractor - INFO - Processing scheduler ID: 9360026
+2025-10-07 23:01:41,463 - connecteam_extractor - INFO - Fetching shifts for scheduler 9360026 from 1751425263 to 1768363263
+2025-10-07 23:01:41,838 - connecteam_extractor - INFO - First shift structure: {"id": "68b89521bb2d35a401e10d57", "color": "", "assignedUserIds": [8786507], "startTime": 1756927800, "endTime": 1756929600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "5bac64ff-02db-255f-59ad-a8a36beb8284", "locationData": {"isReferencedToJob": false, "gps": {"address": ""}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1756927265, "creationTime": 1756927265, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:41,838 - connecteam_extractor - INFO - First shift assignedUserIds: [8786507]
+2025-10-07 23:01:41,838 - connecteam_extractor - INFO - Successfully retrieved 4 shifts for scheduler 9360026
+2025-10-07 23:01:41,840 - connecteam_extractor - INFO - Transformed shift 68b89521bb2d35a401e10d57: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:01:41,840 - connecteam_extractor - INFO - Transformed shift 68c044fa1f2c7a1967bbc42e: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:01:41,840 - connecteam_extractor - INFO - Transformed shift 68c1b2793aa9613aa5ec37bd: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:01:42,344 - connecteam_extractor - INFO - Processing scheduler ID: 10439054
+2025-10-07 23:01:42,345 - connecteam_extractor - INFO - Fetching shifts for scheduler 10439054 from 1751425263 to 1768363263
+2025-10-07 23:01:42,746 - connecteam_extractor - INFO - First shift structure: {"id": "68b8a99f0619f394d39954d1", "color": "", "assignedUserIds": [8786507], "startTime": 1756933200, "endTime": 1756935000, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "2ed4117c-faff-424d-b6a2-c9173a72d903", "locationData": {"isReferencedToJob": true, "gps": {"address": "124 E 170th St., Bronx, NY"}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1756932511, "creationTime": 1756932511, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:42,748 - connecteam_extractor - INFO - First shift assignedUserIds: [8786507]
+2025-10-07 23:01:42,749 - connecteam_extractor - INFO - Successfully retrieved 1 shifts for scheduler 10439054
+2025-10-07 23:01:42,760 - connecteam_extractor - INFO - Transformed shift 68b8a99f0619f394d39954d1: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:01:43,311 - connecteam_extractor - INFO - Processing scheduler ID: 10617149
+2025-10-07 23:01:43,314 - connecteam_extractor - INFO - Fetching shifts for scheduler 10617149 from 1751425263 to 1768363263
+2025-10-07 23:01:43,691 - connecteam_extractor - INFO - First shift structure: {"id": "68cb01ca5bb437702e5cbf0c", "color": "", "assignedUserIds": [8786507], "startTime": 1758133800, "endTime": 1758135600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "3215f152-73f7-4ccd-95b6-99cdd7e1bb7a", "locationData": {"isReferencedToJob": false, "gps": {"address": ""}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1758134807, "creationTime": 1758134730, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:01:43,691 - connecteam_extractor - INFO - First shift assignedUserIds: [8786507]
+2025-10-07 23:01:43,691 - connecteam_extractor - INFO - Successfully retrieved 1 shifts for scheduler 10617149
+2025-10-07 23:01:43,692 - connecteam_extractor - INFO - Transformed shift 68cb01ca5bb437702e5cbf0c: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:01:44,201 - connecteam_extractor - INFO - Total shifts after transformation: 4631
+2025-10-07 23:01:44,207 - connecteam_extractor - INFO - Shifts with empty assignedUsers: 399 (8.62%)
+2025-10-07 23:01:44,207 - connecteam_extractor - INFO - Writing 4631 shifts to managed_tables/connect_teams/schedule_data.csv
+2025-10-07 23:01:44,207 - connecteam_extractor - ERROR - Error writing to CSV: [Errno 2] No such file or directory: 'managed_tables/connect_teams/schedule_data.csv'
+2025-10-07 23:01:44,207 - connecteam_extractor - ERROR - Error in data extraction process: [Errno 2] No such file or directory: 'managed_tables/connect_teams/schedule_data.csv'
+2025-10-07 23:01:52,823 - connecteam_extractor - INFO - Starting Connecteam data extraction
+2025-10-07 23:01:52,823 - connecteam_extractor - INFO - Time range: 7/1/25 23:01 to 1/13/26 23:01
+2025-10-07 23:01:52,823 - connecteam_extractor - INFO - Fetching users from https://api.connecteam.com/users/v1/users
+2025-10-07 23:01:53,458 - connecteam_extractor - INFO - Successfully retrieved 91 users (91 unique IDs)
+2025-10-07 23:01:53,458 - connecteam_extractor - INFO - User ID 1112785 mapped to: Christy VanNess
+2025-10-07 23:01:53,458 - connecteam_extractor - INFO - User ID 1112790 mapped to: Dan Brashear
+2025-10-07 23:01:53,458 - connecteam_extractor - INFO - User ID 1128727 mapped to: Laura Edwards
+2025-10-07 23:01:53,458 - connecteam_extractor - INFO - User ID 1128730 mapped to: Jen Hayes
+2025-10-07 23:01:53,458 - connecteam_extractor - INFO - User ID 1128733 mapped to: Mich Morris
+2025-10-07 23:01:53,460 - connecteam_extractor - INFO - User map contains 91 entries
+2025-10-07 23:01:53,461 - connecteam_extractor - INFO - Fetching jobs from https://api.connecteam.com/jobs/v1/jobs
+2025-10-07 23:02:08,859 - connecteam_extractor - INFO - Successfully retrieved 2260 jobs (2258 unique IDs)
+2025-10-07 23:02:08,862 - connecteam_extractor - INFO - Job map contains 2258 entries
+2025-10-07 23:02:08,862 - connecteam_extractor - INFO - Fetching scheduler details from https://api.connecteam.com/scheduler/v1/schedulers
+2025-10-07 23:02:09,209 - connecteam_extractor - INFO - Successfully retrieved 12 scheduler names
+2025-10-07 23:02:09,211 - connecteam_extractor - INFO - Fetching schedulers from https://api.connecteam.com/scheduler/v1/schedulers
+2025-10-07 23:02:09,587 - connecteam_extractor - INFO - Successfully retrieved schedulers response
+2025-10-07 23:02:09,588 - connecteam_extractor - INFO - Scheduler response type: <class 'dict'>
+2025-10-07 23:02:09,591 - connecteam_extractor - INFO - Extracted 12 scheduler IDs
+2025-10-07 23:02:09,591 - connecteam_extractor - INFO - Processing scheduler ID: 821671
+2025-10-07 23:02:09,591 - connecteam_extractor - INFO - Fetching shifts for scheduler 821671 from 1751425312 to 1768363312
+2025-10-07 23:02:10,783 - connecteam_extractor - INFO - First shift structure: {"id": "672bbb66a600385474f47f22", "color": "", "assignedUserIds": [10931963], "startTime": 1752757200, "endTime": 1752782400, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "efb9c6f4-9156-6ca3-fe88-34c48ffac9ee", "locationData": {"isReferencedToJob": true, "gps": {"address": "13135 Lee Jackson Memorial Highway Service Road suite 110, Fairfax, VA, USA", "longitude": -77.40035379999999, "latitude": 38.8808961}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1749665219, "creationTime": 1730919270, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:10,783 - connecteam_extractor - INFO - First shift assignedUserIds: [10931963]
+2025-10-07 23:02:13,832 - connecteam_extractor - INFO - Successfully retrieved 1247 shifts for scheduler 821671
+2025-10-07 23:02:13,834 - connecteam_extractor - INFO - Transformed shift 672bbb66a600385474f47f22: assignedUsers = 'Kyleigh Laycock', location = ''
+2025-10-07 23:02:13,835 - connecteam_extractor - INFO - Transformed shift 673e46735d840d9fc0e953ab: assignedUsers = 'Courtney Brown', location = ''
+2025-10-07 23:02:13,835 - connecteam_extractor - INFO - Transformed shift 673e4673a4211b6d023880c0: assignedUsers = 'Rebecca Fuentes', location = ''
+2025-10-07 23:02:14,391 - connecteam_extractor - INFO - Processing scheduler ID: 1800755
+2025-10-07 23:02:14,392 - connecteam_extractor - INFO - Fetching shifts for scheduler 1800755 from 1751425312 to 1768363312
+2025-10-07 23:02:15,064 - connecteam_extractor - INFO - First shift structure: {"id": "67191c94e50770551d826409", "color": "", "assignedUserIds": [1128730], "startTime": 1752069600, "endTime": 1752098400, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "c7fa3d1c-5560-404c-acbf-103857232767", "locationData": {"isReferencedToJob": true, "gps": {"address": "Kennett Dental, McFarlan Road, Kennett Square, PA, USA", "longitude": -75.6926903, "latitude": 39.85578140000001}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1729699038, "creationTime": 1729698964, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:15,065 - connecteam_extractor - INFO - First shift assignedUserIds: [1128730]
+2025-10-07 23:02:15,065 - connecteam_extractor - INFO - Successfully retrieved 331 shifts for scheduler 1800755
+2025-10-07 23:02:15,069 - connecteam_extractor - INFO - Transformed shift 67191c94e50770551d826409: assignedUsers = 'Jen Hayes', location = ''
+2025-10-07 23:02:15,069 - connecteam_extractor - INFO - Transformed shift 67191c9483d07f3ee27eda14: assignedUsers = 'Jen Hayes', location = ''
+2025-10-07 23:02:15,069 - connecteam_extractor - INFO - Transformed shift 6719584c0a6fae95697f7a94: assignedUsers = 'Jen Hayes', location = ''
+2025-10-07 23:02:15,592 - connecteam_extractor - INFO - Processing scheduler ID: 3116851
+2025-10-07 23:02:15,592 - connecteam_extractor - INFO - Fetching shifts for scheduler 3116851 from 1751425312 to 1768363312
+2025-10-07 23:02:16,363 - connecteam_extractor - INFO - First shift structure: {"id": "67c8930a4a9eb615eaa16ea9", "color": "", "assignedUserIds": [7194279], "startTime": 1751634000, "endTime": 1751662800, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "75b9030f-6b31-4abb-a847-770feb29c657", "locationData": {"isReferencedToJob": false, "gps": {"address": ""}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1741198127, "creationTime": 1741198090, "notes": [], "statuses": [{"statusId": "e9d45f9a-60a0-475a-963e-5c78d0824de1", "status": "accepted", "creationTime": 1741198127, "updateTime": 1741198127, "creatingUserId": 7194279, "modifyingUserId": 7194279}], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:16,363 - connecteam_extractor - INFO - First shift assignedUserIds: [7194279]
+2025-10-07 23:02:16,363 - connecteam_extractor - INFO - Successfully retrieved 148 shifts for scheduler 3116851
+2025-10-07 23:02:16,367 - connecteam_extractor - INFO - Transformed shift 67c8930a4a9eb615eaa16ea9: assignedUsers = 'Horthencia Felix', location = ''
+2025-10-07 23:02:16,367 - connecteam_extractor - INFO - Transformed shift 67dc33e172f9987310f8204b: assignedUsers = 'Horthencia Felix', location = ''
+2025-10-07 23:02:16,367 - connecteam_extractor - INFO - Transformed shift 67dc4799e2328e8f1daa89c1: assignedUsers = '', location = ''
+2025-10-07 23:02:16,881 - connecteam_extractor - INFO - Processing scheduler ID: 3137235
+2025-10-07 23:02:16,882 - connecteam_extractor - INFO - Fetching shifts for scheduler 3137235 from 1751425312 to 1768363312
+2025-10-07 23:02:18,021 - connecteam_extractor - INFO - First shift structure: {"id": "67a141abe737abf7f10ca5da", "color": "", "assignedUserIds": [], "startTime": 1752771600, "endTime": 1752789600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "e5cd5ef6-ac11-4ac8-91a4-639d68e4bd50", "locationData": {"isReferencedToJob": true, "gps": {"address": "191 Boulevard, Hasbrouck Heights, NJ, USA", "longitude": -74.07916680000001, "latitude": 40.8613017}}, "isPublished": false, "isRequireAdminApproval": false, "updateTime": 1752007672, "creationTime": 1738621355, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:18,021 - connecteam_extractor - INFO - First shift assignedUserIds: []
+2025-10-07 23:02:19,524 - connecteam_extractor - INFO - Successfully retrieved 888 shifts for scheduler 3137235
+2025-10-07 23:02:19,525 - connecteam_extractor - INFO - Transformed shift 67a141abe737abf7f10ca5da: assignedUsers = '', location = ''
+2025-10-07 23:02:19,525 - connecteam_extractor - INFO - Transformed shift 67a141abc2581f5273790ec6: assignedUsers = 'Melissa Cawley', location = ''
+2025-10-07 23:02:19,526 - connecteam_extractor - INFO - Transformed shift 67a141abbec09ae24caf0dcf: assignedUsers = 'Melissa Cawley', location = ''
+2025-10-07 23:02:19,526 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67b5fac9d3b10e16e6c8b0bb
+2025-10-07 23:02:19,526 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67b5fad251ff4c4422b1959f
+2025-10-07 23:02:19,526 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 67c8be2c8ce8a2a1b94eb139
+2025-10-07 23:02:19,527 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67c8be39091c58843a2c0ba3
+2025-10-07 23:02:19,527 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 67c8be481752fb9d97fe1016
+2025-10-07 23:02:19,527 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67ebe6b7a572475fc3061a57
+2025-10-07 23:02:19,528 - connecteam_extractor - WARNING - User ID 2374953 not found in user map for shift 67f6b0bd0f215475aa64e256
+2025-10-07 23:02:19,529 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 680fd8ccf4d62af47a2d1dde
+2025-10-07 23:02:19,531 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 682f4dfddf7d6fdf952846d5
+2025-10-07 23:02:19,532 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 682f4e11c945403060c2e089
+2025-10-07 23:02:19,532 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 682f4e11f39caff4f7996416
+2025-10-07 23:02:19,532 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 6835d2c62b4590bfb8b7b8a6
+2025-10-07 23:02:19,534 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683df3364e6edcdabae0305d
+2025-10-07 23:02:19,534 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683df3974b1b7cec12e4012d
+2025-10-07 23:02:19,534 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683df3a814492105b6e50bf9
+2025-10-07 23:02:19,535 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 683f3c6bc17013806d327d6e
+2025-10-07 23:02:19,535 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6841c3536ebefc183bf416be
+2025-10-07 23:02:19,535 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684841a1edecb88db8ecaecd
+2025-10-07 23:02:19,535 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684841ba3415cb1e74d0f51a
+2025-10-07 23:02:19,535 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68484249cc96260c2694d446
+2025-10-07 23:02:19,536 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684842695b689d1d8043ba26
+2025-10-07 23:02:19,536 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 684842b78efdd437ba826e0b
+2025-10-07 23:02:19,536 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6849882c6b8600aae77dfb43
+2025-10-07 23:02:19,536 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68498845808aaf33a29c06e6
+2025-10-07 23:02:19,536 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 684acb1638e21e34c80dca80
+2025-10-07 23:02:19,536 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 684acb24b384e46f7d266405
+2025-10-07 23:02:19,537 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685423f2b041c3030eb5704a
+2025-10-07 23:02:19,538 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6854275090cc6d6b4cbedd03
+2025-10-07 23:02:19,538 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68545e7b68122c2b27c9d06b
+2025-10-07 23:02:19,538 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6855a28abc8a4c6040ba90aa
+2025-10-07 23:02:19,539 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6855a2a1995022bd30e2c03b
+2025-10-07 23:02:19,539 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 685adc86a14028cb6e7bd031
+2025-10-07 23:02:19,539 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685ae8caddf71070320224f7
+2025-10-07 23:02:19,539 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685af16d2f12f36f0f6d4d77
+2025-10-07 23:02:19,539 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c01f208c01d2ea269c30a
+2025-10-07 23:02:19,540 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c2600ec498e39ba537514
+2025-10-07 23:02:19,540 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c4c67907cc925de041d7a
+2025-10-07 23:02:19,540 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c5b470fb28d714f1e1f16
+2025-10-07 23:02:19,540 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 685c5e9095b5ca7c09a16a59
+2025-10-07 23:02:19,541 - connecteam_extractor - WARNING - User ID 3801381 not found in user map for shift 6862dbe2b160643f1e6bf09f
+2025-10-07 23:02:19,542 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68656d7b37e0670b6822268f
+2025-10-07 23:02:19,543 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 686d53c545efee6b519d3f2a
+2025-10-07 23:02:19,544 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 686e8bfdd68f1b69c62bc0bd
+2025-10-07 23:02:19,544 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 686fda7df3d2ead941f9dbf7
+2025-10-07 23:02:19,545 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68714e970a53a1caf45d5b17
+2025-10-07 23:02:19,545 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 687544ebacd6ebd6efb90b7e
+2025-10-07 23:02:19,545 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68754521813c2f168d055b8a
+2025-10-07 23:02:19,546 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68766e966875616c66d7a9b5
+2025-10-07 23:02:19,546 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68769e6f896f640287035f10
+2025-10-07 23:02:19,546 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6877fe8b15bfcff37698121f
+2025-10-07 23:02:19,548 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 687ea5365c556b83abb0c01c
+2025-10-07 23:02:19,548 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 687f9cda205202000ba74744
+2025-10-07 23:02:19,549 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68829fc2d255590a423900a1
+2025-10-07 23:02:19,549 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6883a2025ebd3f2fde744472
+2025-10-07 23:02:19,549 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6883af491de68db2bd7ac613
+2025-10-07 23:02:19,550 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6887a51204dade5f03938c89
+2025-10-07 23:02:19,550 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6888e22d8d27576ef4fc99a7
+2025-10-07 23:02:19,551 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 688a77c2bb620526ba5f4185
+2025-10-07 23:02:19,552 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68934f85bb8d7741525dbd8f
+2025-10-07 23:02:19,553 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6894c45be4c73651179dfec3
+2025-10-07 23:02:19,553 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6895051e511c324faa5b0eac
+2025-10-07 23:02:19,553 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6895053652bd4f35eb9f0df0
+2025-10-07 23:02:19,554 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68951348342c5bfe7f23fd38
+2025-10-07 23:02:19,554 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6895138b07cb5c0321767448
+2025-10-07 23:02:19,554 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 6896119ce473a8cb189f2fc3
+2025-10-07 23:02:19,554 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68964548e0b742bbfafa0d26
+2025-10-07 23:02:19,555 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689651fc40f6552f0484d472
+2025-10-07 23:02:19,555 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689a147336be93baeebf819b
+2025-10-07 23:02:19,556 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689a48b9a9945ecc983d51de
+2025-10-07 23:02:19,556 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689c9a47cf51e5f0897fe580
+2025-10-07 23:02:19,556 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 689df79538fe84fec452df41
+2025-10-07 23:02:19,557 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68a38e544028e2f1919f4216
+2025-10-07 23:02:19,557 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68a4e03ef25510563101c5ba
+2025-10-07 23:02:19,557 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68a77f27228c090123e522ee
+2025-10-07 23:02:19,558 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac8a76eb372764a98d4a3b
+2025-10-07 23:02:19,558 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9c60f7606a041b4a871a
+2025-10-07 23:02:19,558 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9c760b6710bff74d0631
+2025-10-07 23:02:19,558 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9c96c42c88b3ab8701a6
+2025-10-07 23:02:19,558 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cb40c21d403a755e817
+2025-10-07 23:02:19,558 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cd31c3d0a935d8bef9a
+2025-10-07 23:02:19,558 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cdf7636f616889c7511
+2025-10-07 23:02:19,558 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ac9cfbf4b31428274bfdcb
+2025-10-07 23:02:19,559 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68ae02dcb04e244918a6b02b
+2025-10-07 23:02:19,560 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b7451a153ad9641aa66c07
+2025-10-07 23:02:19,561 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b865fbe6ac607e25800636
+2025-10-07 23:02:19,561 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b877cbb1899fc8932deaf3
+2025-10-07 23:02:19,561 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b877d8e86a280fae944ffb
+2025-10-07 23:02:19,561 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b877e6af45748197b66040
+2025-10-07 23:02:19,561 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68b894e1be08e59f9cf90c41
+2025-10-07 23:02:19,563 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68c86a27afbaa81da8ba506d
+2025-10-07 23:02:19,565 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68d1523870fb027fd8266665
+2025-10-07 23:02:19,565 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68d41b9801cc5737c1e89a55
+2025-10-07 23:02:19,565 - connecteam_extractor - WARNING - User ID 7064411 not found in user map for shift 68d700952ac03ef521227f5f
+2025-10-07 23:02:20,073 - connecteam_extractor - INFO - Processing scheduler ID: 3230583
+2025-10-07 23:02:20,073 - connecteam_extractor - INFO - Fetching shifts for scheduler 3230583 from 1751425312 to 1768363312
+2025-10-07 23:02:21,267 - connecteam_extractor - INFO - First shift structure: {"id": "672a2b02815642ff59b74d2c", "color": "", "assignedUserIds": [7011999], "startTime": 1751889600, "endTime": 1751922000, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "d8340027-95a5-4593-871b-e0a518c09b8d", "locationData": {"isReferencedToJob": true, "gps": {"address": "19651 Bruce B Downs Blvd Suite A-1, Tampa FL 33647"}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1751838439, "creationTime": 1730816770, "notes": [], "statuses": [{"statusId": "ba7d5f73-bede-446b-bd69-6f01fcf91597", "status": "accepted", "creationTime": 1751838439, "updateTime": 1751838439, "creatingUserId": 7011999, "modifyingUserId": 7011999, "assignedUserId": 7011999}], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:21,267 - connecteam_extractor - INFO - First shift assignedUserIds: [7011999]
+2025-10-07 23:02:22,951 - connecteam_extractor - INFO - Successfully retrieved 885 shifts for scheduler 3230583
+2025-10-07 23:02:22,953 - connecteam_extractor - INFO - Transformed shift 672a2b02815642ff59b74d2c: assignedUsers = 'Bethany Riendeau', location = ''
+2025-10-07 23:02:22,954 - connecteam_extractor - INFO - Transformed shift 672a2b7e00b21dd6417cb842: assignedUsers = 'Bethany Riendeau', location = ''
+2025-10-07 23:02:22,954 - connecteam_extractor - INFO - Transformed shift 672a2b7efabcc2b865324d9a: assignedUsers = 'Bethany Riendeau', location = ''
+2025-10-07 23:02:23,497 - connecteam_extractor - INFO - Processing scheduler ID: 3968324
+2025-10-07 23:02:23,497 - connecteam_extractor - INFO - Fetching shifts for scheduler 3968324 from 1751425312 to 1768363312
+2025-10-07 23:02:24,282 - connecteam_extractor - INFO - First shift structure: {"id": "674f630e67347d889f029138", "color": "", "assignedUserIds": [4921860], "startTime": 1753187400, "endTime": 1753214400, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "f01c6b17-956a-4152-9bff-b3998143947c", "locationData": {"isReferencedToJob": true, "gps": {"address": "123 Gralan Dr, Byron, GA 31008, USA", "longitude": -83.7548345, "latitude": 32.6498378}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1733256019, "creationTime": 1733255950, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:24,283 - connecteam_extractor - INFO - First shift assignedUserIds: [4921860]
+2025-10-07 23:02:24,283 - connecteam_extractor - INFO - Successfully retrieved 288 shifts for scheduler 3968324
+2025-10-07 23:02:24,286 - connecteam_extractor - INFO - Transformed shift 674f630e67347d889f029138: assignedUsers = 'Carmen Silverio', location = ''
+2025-10-07 23:02:24,286 - connecteam_extractor - INFO - Transformed shift 675887440a2ceefcb1295b9e: assignedUsers = '', location = ''
+2025-10-07 23:02:24,286 - connecteam_extractor - INFO - Transformed shift 6758924426db2b2cef63472a: assignedUsers = 'Carmen Silverio', location = ''
+2025-10-07 23:02:24,806 - connecteam_extractor - INFO - Processing scheduler ID: 5252193
+2025-10-07 23:02:24,807 - connecteam_extractor - INFO - Fetching shifts for scheduler 5252193 from 1751425312 to 1768363312
+2025-10-07 23:02:25,410 - connecteam_extractor - INFO - First shift structure: {"id": "67bcd4b89dd74ed6b5c13325", "color": "", "assignedUserIds": [5865107], "startTime": 1752496200, "endTime": 1752528600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "e9a9e87a-ef40-49de-acba-33b31cc57b44", "locationData": {"isReferencedToJob": true, "gps": {"address": "Dr. Kristina Zivrev D.M.D., LTD, Oakbrook Center, Oak Brook, IL, USA", "longitude": -87.95271679999999, "latitude": 41.8496904}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1751691570, "creationTime": 1740428472, "notes": [], "statuses": [{"statusId": "2bd5150f-9dd5-4f52-94d7-3654dceae15b", "status": "accepted", "creationTime": 1751691570, "updateTime": 1751691570, "creatingUserId": 5865107, "modifyingUserId": 5865107, "assignedUserId": 5865107}], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:25,410 - connecteam_extractor - INFO - First shift assignedUserIds: [5865107]
+2025-10-07 23:02:25,410 - connecteam_extractor - INFO - Successfully retrieved 236 shifts for scheduler 5252193
+2025-10-07 23:02:25,412 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67bcd4b89dd74ed6b5c13325
+2025-10-07 23:02:25,413 - connecteam_extractor - INFO - Transformed shift 67bcd4b89dd74ed6b5c13325: assignedUsers = 'User 5865107', location = ''
+2025-10-07 23:02:25,413 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67bcd4ef8de05625ed3ff03b
+2025-10-07 23:02:25,413 - connecteam_extractor - INFO - Transformed shift 67bcd4ef8de05625ed3ff03b: assignedUsers = 'User 5865107', location = ''
+2025-10-07 23:02:25,413 - connecteam_extractor - INFO - Transformed shift 67be0a8308b7073b510bdac4: assignedUsers = 'Lauren Maginity', location = ''
+2025-10-07 23:02:25,413 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67c89054e524c19db1a8ad6f
+2025-10-07 23:02:25,413 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08f1d9a8714cc45d0afdb
+2025-10-07 23:02:25,414 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08f1d7a173b2a3e54ba0d
+2025-10-07 23:02:25,414 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08f5752a5c3ae5729c8b9
+2025-10-07 23:02:25,414 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67d08fbbb13ddacf04a0236d
+2025-10-07 23:02:25,415 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67e576054fe08d5030e326c7
+2025-10-07 23:02:25,415 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 67e5760598ba217e44a631ce
+2025-10-07 23:02:25,415 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 680016f3b857554201019553
+2025-10-07 23:02:25,415 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6800170dffe37ea81cd40dd8
+2025-10-07 23:02:25,417 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 68091cc0333ecee5895c3926
+2025-10-07 23:02:25,417 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6813941464102ab02e64662d
+2025-10-07 23:02:25,419 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6838b1098e1500d0383930d5
+2025-10-07 23:02:25,419 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 683dfb980e7931528d0b0b27
+2025-10-07 23:02:25,420 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 684878047cb5d544d120c914
+2025-10-07 23:02:25,420 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6849d43db041cfdbc1c5d34d
+2025-10-07 23:02:25,421 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 685330557ed98f920cddca23
+2025-10-07 23:02:25,421 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6853307f9b2345e6516544bb
+2025-10-07 23:02:25,421 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 685ee600167499231a276a47
+2025-10-07 23:02:25,422 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6862d80271fb99384ea41239
+2025-10-07 23:02:25,422 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6863d4155fa3bd958837dd51
+2025-10-07 23:02:25,423 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 6866939e3e6dc68e80040af0
+2025-10-07 23:02:25,423 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 686693ead31d1e2c2a040bd5
+2025-10-07 23:02:25,424 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 68824bb71cd16e234c0dc70c
+2025-10-07 23:02:25,425 - connecteam_extractor - WARNING - User ID 5865107 not found in user map for shift 688bc563f187fc1275b590e1
+2025-10-07 23:02:25,928 - connecteam_extractor - INFO - Processing scheduler ID: 5501164
+2025-10-07 23:02:25,929 - connecteam_extractor - INFO - Fetching shifts for scheduler 5501164 from 1751425312 to 1768363312
+2025-10-07 23:02:26,709 - connecteam_extractor - INFO - First shift structure: {"id": "679918b53682fd2b626d8dcb", "color": "", "assignedUserIds": [], "startTime": 1752148800, "endTime": 1752181200, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "aa79a60b-e6c3-4989-9a16-daa285e173d8", "locationData": {"isReferencedToJob": true, "gps": {"address": "4013 14th St suite 413, Plano, TX, USA", "longitude": -96.6563273, "latitude": 33.01527069999999}}, "isPublished": false, "isRequireAdminApproval": false, "updateTime": 1748454338, "creationTime": 1738086581, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:26,709 - connecteam_extractor - INFO - First shift assignedUserIds: []
+2025-10-07 23:02:27,739 - connecteam_extractor - INFO - Successfully retrieved 566 shifts for scheduler 5501164
+2025-10-07 23:02:27,742 - connecteam_extractor - INFO - Transformed shift 679918b53682fd2b626d8dcb: assignedUsers = '', location = ''
+2025-10-07 23:02:27,742 - connecteam_extractor - INFO - Transformed shift 679918b5f2bc0b4c13cac8ad: assignedUsers = 'Dana Dagons', location = ''
+2025-10-07 23:02:27,742 - connecteam_extractor - INFO - Transformed shift 67ab6e62dd8aef6e27f005e6: assignedUsers = 'Christina Martinez', location = ''
+2025-10-07 23:02:28,277 - connecteam_extractor - INFO - Processing scheduler ID: 6252192
+2025-10-07 23:02:28,278 - connecteam_extractor - INFO - Fetching shifts for scheduler 6252192 from 1751425312 to 1768363312
+2025-10-07 23:02:28,755 - connecteam_extractor - INFO - First shift structure: {"id": "67b4c13368ad4412e37e0cfe", "color": "", "assignedUserIds": [4276411], "startTime": 1752753600, "endTime": 1752778800, "timezone": "America/New_York", "isOpenShift": false, "title": "Stephanie", "jobId": "4108b585-1074-a8f5-1211-adf6cd8228e9", "locationData": {"isReferencedToJob": true, "gps": {"address": "917 Harpeth Valley Place, Nashville, TN, USA", "longitude": -86.956611, "latitude": 36.083528}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1752084623, "creationTime": 1739899187, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:28,755 - connecteam_extractor - INFO - First shift assignedUserIds: [4276411]
+2025-10-07 23:02:28,755 - connecteam_extractor - INFO - Successfully retrieved 36 shifts for scheduler 6252192
+2025-10-07 23:02:28,759 - connecteam_extractor - INFO - Transformed shift 67b4c13368ad4412e37e0cfe: assignedUsers = 'A TC from another region', location = ''
+2025-10-07 23:02:28,760 - connecteam_extractor - INFO - Transformed shift 67b4c1338c76899d6810c741: assignedUsers = '', location = ''
+2025-10-07 23:02:28,760 - connecteam_extractor - INFO - Transformed shift 67cf51f5492c5c5cd4f12f09: assignedUsers = '', location = ''
+2025-10-07 23:02:29,267 - connecteam_extractor - INFO - Processing scheduler ID: 9360026
+2025-10-07 23:02:29,268 - connecteam_extractor - INFO - Fetching shifts for scheduler 9360026 from 1751425312 to 1768363312
+2025-10-07 23:02:29,629 - connecteam_extractor - INFO - First shift structure: {"id": "68b89521bb2d35a401e10d57", "color": "", "assignedUserIds": [8786507], "startTime": 1756927800, "endTime": 1756929600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "5bac64ff-02db-255f-59ad-a8a36beb8284", "locationData": {"isReferencedToJob": false, "gps": {"address": ""}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1756927265, "creationTime": 1756927265, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:29,629 - connecteam_extractor - INFO - First shift assignedUserIds: [8786507]
+2025-10-07 23:02:29,629 - connecteam_extractor - INFO - Successfully retrieved 4 shifts for scheduler 9360026
+2025-10-07 23:02:29,632 - connecteam_extractor - INFO - Transformed shift 68b89521bb2d35a401e10d57: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:02:29,632 - connecteam_extractor - INFO - Transformed shift 68c044fa1f2c7a1967bbc42e: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:02:29,633 - connecteam_extractor - INFO - Transformed shift 68c1b2793aa9613aa5ec37bd: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:02:30,138 - connecteam_extractor - INFO - Processing scheduler ID: 10439054
+2025-10-07 23:02:30,138 - connecteam_extractor - INFO - Fetching shifts for scheduler 10439054 from 1751425312 to 1768363312
+2025-10-07 23:02:31,138 - connecteam_extractor - INFO - First shift structure: {"id": "68b8a99f0619f394d39954d1", "color": "", "assignedUserIds": [8786507], "startTime": 1756933200, "endTime": 1756935000, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "2ed4117c-faff-424d-b6a2-c9173a72d903", "locationData": {"isReferencedToJob": true, "gps": {"address": "124 E 170th St., Bronx, NY"}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1756932511, "creationTime": 1756932511, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:31,138 - connecteam_extractor - INFO - First shift assignedUserIds: [8786507]
+2025-10-07 23:02:31,138 - connecteam_extractor - INFO - Successfully retrieved 1 shifts for scheduler 10439054
+2025-10-07 23:02:31,141 - connecteam_extractor - INFO - Transformed shift 68b8a99f0619f394d39954d1: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:02:31,645 - connecteam_extractor - INFO - Processing scheduler ID: 10617149
+2025-10-07 23:02:31,645 - connecteam_extractor - INFO - Fetching shifts for scheduler 10617149 from 1751425312 to 1768363312
+2025-10-07 23:02:32,016 - connecteam_extractor - INFO - First shift structure: {"id": "68cb01ca5bb437702e5cbf0c", "color": "", "assignedUserIds": [8786507], "startTime": 1758133800, "endTime": 1758135600, "timezone": "America/New_York", "isOpenShift": false, "title": "", "jobId": "3215f152-73f7-4ccd-95b6-99cdd7e1bb7a", "locationData": {"isReferencedToJob": false, "gps": {"address": ""}}, "isPublished": true, "isRequireAdminApproval": false, "updateTime": 1758134807, "creationTime": 1758134730, "notes": [], "statuses": [], "breaks": [], "shiftDetails": {"shiftLayers": []}}
+2025-10-07 23:02:32,016 - connecteam_extractor - INFO - First shift assignedUserIds: [8786507]
+2025-10-07 23:02:32,016 - connecteam_extractor - INFO - Successfully retrieved 1 shifts for scheduler 10617149
+2025-10-07 23:02:32,019 - connecteam_extractor - INFO - Transformed shift 68cb01ca5bb437702e5cbf0c: assignedUsers = 'Andrew Rice', location = ''
+2025-10-07 23:02:32,523 - connecteam_extractor - INFO - Total shifts after transformation: 4631
+2025-10-07 23:02:32,524 - connecteam_extractor - INFO - Shifts with empty assignedUsers: 399 (8.62%)
+2025-10-07 23:02:32,524 - connecteam_extractor - INFO - Writing 4631 shifts to managed_tables/connect_teams/schedule_data.csv
+2025-10-07 23:02:32,578 - connecteam_extractor - INFO - Successfully wrote data to managed_tables/connect_teams/schedule_data.csv
+2025-10-07 23:02:32,578 - connecteam_extractor - INFO - Creating location mapping file
+2025-10-07 23:02:32,582 - connecteam_extractor - INFO - Successfully wrote 548 unique locations to managed_tables/connect_teams/location_mapping.csv
+2025-10-07 23:02:32,582 - connecteam_extractor - INFO - Data extraction completed successfully. Total shifts: 4631
