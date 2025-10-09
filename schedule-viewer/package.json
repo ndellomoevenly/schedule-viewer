@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "refresh-data": "python3 scripts/connecteam_extractor.py",
+    "join-data": "python3 scripts/join_data.py"
   },
   "dependencies": {
     "date-fns": "^4.1.0",

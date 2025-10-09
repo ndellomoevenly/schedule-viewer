@@ -23,7 +23,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("connecteam_extraction.log"),
+        logging.FileHandler("data-pipelines/connecteam/connecteam_extraction.log"),
         logging.StreamHandler()
     ]
 )
@@ -47,8 +47,8 @@ DAYS_OF_DATA = (today - start_date).days
 #DAYS_OF_DATA = 180
 print(DAYS_OF_DATA)
 # Output files
-OUTPUT_FILE = "managed_tables/connect_teams/schedule_data.csv"
-LOCATION_MAPPING_FILE = "managed_tables/connect_teams/location_mapping.csv"
+OUTPUT_FILE = "public/data/schedule_data.csv"
+LOCATION_MAPPING_FILE = "data-pipelines/connecteam/location_mapping.csv"
 
 # CSV field names (matching the provided CSV structure)
 CSV_FIELDS = [

@@ -151,7 +151,7 @@ export default function AppointmentDetailModal({
                       </p>
                       <p className="text-slate-700">
                         <span className="font-semibold text-slate-900">Assigned TC:</span>{' '}
-                        {appointment.assigned_tc}
+                        {appointment.tc_name}
                       </p>
                       <p className="text-slate-700">
                         <span className="font-semibold text-slate-900">Patient ID:</span> {appointment.patient_id}

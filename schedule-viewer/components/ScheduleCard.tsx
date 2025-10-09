@@ -58,9 +58,6 @@ export default function ScheduleCard({ schedule }: ScheduleCardProps) {
             </span>
           )}
         </div>
-        {schedule.store_id && (
-          <p className="text-xs text-gray-500">ID: {schedule.store_id}</p>
-        )}
         <p className="text-xs text-gray-600">{schedule.address}</p>
         <p className="text-xs text-gray-500 mt-1">
           {schedule.startTime} - {schedule.endTime}

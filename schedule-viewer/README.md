@@ -45,6 +45,24 @@ The dashboard combines data from three CSV files:
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## Data Workflow
+
+### Quick Update
+
+```bash
+# 1. Refresh Connecteam schedule data
+npm run refresh-data
+
+# 2. Drop in your updated cloud9_appts.csv to public/data/
+
+# 3. Join all the data and review for quality
+npm run join-data
+```
+
+The `join-data` command creates `public/data/joined_schedules.csv` which you can open in Excel to review data quality, check for mismatches, and identify issues before loading into the app.
+
+**For detailed workflow and troubleshooting, see [DATA_WORKFLOW.md](DATA_WORKFLOW.md)**
+
 ## Deployment to Vercel
 
 ### Option 1: Deploy via Vercel Dashboard

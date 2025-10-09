@@ -1,5 +1,5 @@
 import Papa from 'papaparse';
-import { Appointment, JobLocation, ScheduleEntry, TCSchedule, DashboardData } from './types';
+import { JoinedSchedule, TCSchedule, DashboardData } from './types';
 
 export async function loadCSV<T>(url: string): Promise<T[]> {
   const response = await fetch(url);
@@ -20,85 +20,57 @@ export async function loadCSV<T>(url: string): Promise<T[]> {
 }
 
 export async function loadAllData(): Promise<DashboardData> {
-  const [appointments, locations, scheduleEntries] = await Promise.all([
-    loadCSV<Appointment>('/data/cloud9_appts.csv'),
-    loadCSV<JobLocation>('/data/job_locations.csv'),
-    loadCSV<ScheduleEntry>('/data/schedule_data.csv'),
-  ]);
+  // Load the pre-joined data
+  const joinedData = await loadCSV<JoinedSchedule>('/data/joined_schedules.csv');
 
-  // Build TC schedules by combining schedule entries with their appointments
-  const tcSchedules = buildTCSchedules(scheduleEntries, appointments, locations);
+  // Group by TC + date + location to create TC schedules
+  const tcSchedules = buildTCSchedulesFromJoinedData(joinedData);
 
   return {
     tcSchedules,
-    allAppointments: appointments,
-    allLocations: locations,
-    allScheduleEntries: scheduleEntries,
+    allJoinedData: joinedData,
   };
 }
 
-function buildTCSchedules(
-  scheduleEntries: ScheduleEntry[],
-  appointments: Appointment[],
-  locations: JobLocation[]
-): TCSchedule[] {
+function buildTCSchedulesFromJoinedData(joinedData: JoinedSchedule[]): TCSchedule[] {
+  // Group rows by schedule_id (each schedule can have multiple appointment rows)
+  const scheduleMap = new Map<string, JoinedSchedule[]>();
+
+  for (const row of joinedData) {
+    const key = row.schedule_id;
+    if (!scheduleMap.has(key)) {
+      scheduleMap.set(key, []);
+    }
+    scheduleMap.get(key)!.push(row);
+  }
+
+  // Build TC schedules from grouped data
   const schedules: TCSchedule[] = [];
 
-  // Filter out entries without assigned users and only include published or recent entries
-  const validEntries = scheduleEntries.filter(
-    (entry) => entry.assignedUsers && entry.assignedUsers.trim() !== ''
-  );
+  for (const [scheduleId, rows] of scheduleMap.entries()) {
+    // All rows for this schedule share the same schedule info
+    const firstRow = rows[0];
 
-  for (const entry of validEntries) {
-    const tcName = entry.assignedUsers;
-    const date = entry.startDate;
-
-    // Find matching appointments for this TC on this date
-    // Try multiple join strategies for better matching
-    let tcAppointments = appointments.filter(
-      (appt) =>
-        appt.assigned_tc === tcName &&
-        appt.appt_date === formatDateForComparison(date)
-    );
-
-    // If we have store_name from the enriched data, also try to filter by location
-    if (entry.store_name && tcAppointments.length > 0) {
-      // Further filter by matching location if possible
-      const locationFilteredAppts = tcAppointments.filter((appt) =>
-        matchesLocation(appt.appt_care_center_location, entry.store_name, entry.location)
-      );
-
-      // Only use location-filtered results if we found matches
-      if (locationFilteredAppts.length > 0) {
-        tcAppointments = locationFilteredAppts;
-      }
-    }
+    // Filter out empty appointment rows (schedules with no appointments)
+    const appointmentRows = rows.filter(r => r.appt_guid && r.appt_guid.trim() !== '');
 
     // Determine match quality
     let matchQuality: 'exact' | 'fuzzy' | 'unmatched' = 'unmatched';
-    if (entry.store_guid) {
+    if (firstRow.match_quality === 'exact') {
       matchQuality = 'exact';
-    } else if (entry.location || entry.address) {
+    } else if (firstRow.match_quality === 'fuzzy') {
       matchQuality = 'fuzzy';
     }
 
-    // Use store_name if available, otherwise fall back to location or address lookup
-    const displayLocation = entry.store_name ||
-                           entry.location ||
-                           findLocationByAddress(entry.address, locations)?.Job ||
-                           'Unknown Location';
-
     schedules.push({
-      tcName,
-      date,
-      store_guid: entry.store_guid,
-      store_name: entry.store_name,
-      store_id: entry.store_id,
-      location: displayLocation,
-      address: entry.address,
-      startTime: entry.startTime,
-      endTime: entry.endTime,
-      appointments: tcAppointments,
+      tcName: firstRow.tc_name,
+      date: firstRow.date,
+      location: firstRow.schedule_location,
+      address: firstRow.schedule_address,
+      startTime: firstRow.start_time,
+      endTime: firstRow.end_time,
+      appointmentCount: appointmentRows.length,
+      appointments: appointmentRows,
       matchQuality,
     });
   }
@@ -111,63 +83,4 @@ function buildTCSchedules(
   });
 
   return schedules;
-}
-
-function matchesLocation(apptLocation: string, storeName?: string, shiftLocation?: string): boolean {
-  if (!apptLocation) return false;
-
-  const normalizedAppt = apptLocation.toLowerCase().trim();
-
-  // Check against store name
-  if (storeName) {
-    const normalizedStore = storeName.toLowerCase().trim();
-    if (normalizedAppt === normalizedStore ||
-        normalizedAppt.includes(normalizedStore) ||
-        normalizedStore.includes(normalizedAppt)) {
-      return true;
-    }
-  }
-
-  // Check against shift location
-  if (shiftLocation) {
-    const normalizedShift = shiftLocation.toLowerCase().trim();
-    if (normalizedAppt === normalizedShift ||
-        normalizedAppt.includes(normalizedShift) ||
-        normalizedShift.includes(normalizedAppt)) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function formatDateForComparison(dateStr: string): string {
-  // Convert M/D/YY format to YYYY-MM-DD format
-  try {
-    const parts = dateStr.split('/');
-    if (parts.length === 3) {
-      const month = parts[0].padStart(2, '0');
-      const day = parts[1].padStart(2, '0');
-      const year = parts[2].length === 2 ? `20${parts[2]}` : parts[2];
-      return `${year}-${month}-${day}`;
-    }
-  } catch (e) {
-    console.error('Error formatting date:', dateStr, e);
-  }
-  return dateStr;
-}
-
-function findLocationByAddress(address: string, locations: JobLocation[]): JobLocation | undefined {
-  if (!address) return undefined;
-
-  // Try exact match first
-  const exactMatch = locations.find((loc) => loc.Location === address);
-  if (exactMatch) return exactMatch;
-
-  // Try partial match on address
-  const partialMatch = locations.find((loc) =>
-    loc.Location && address.includes(loc.Location.split(',')[0])
-  );
-
-  return partialMatch;
 }
