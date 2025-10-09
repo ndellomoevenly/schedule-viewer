@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd schedule-viewer && npm run build",
+  "outputDirectory": "schedule-viewer/.next",
+  "devCommand": "cd schedule-viewer && npm run dev",
+  "installCommand": "cd schedule-viewer && npm install",
+  "framework": "nextjs"
+}
